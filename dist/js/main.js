@@ -105,7 +105,7 @@ $('.item-left').each(function() {
   var itemSlide = new ScrollMagic.Scene({
     triggerElement: this,
     triggerHook: 0.7,
-    duration: '50%'
+    duration: '85%'
   })
     .setClassToggle(this, 'items-appear')
     .addIndicators()
@@ -116,7 +116,7 @@ $('.item-right').each(function() {
   var itemSlide = new ScrollMagic.Scene({
     triggerElement: this,
     triggerHook: 0.7,
-    duration: '75%'
+    duration: '85%'
   })
     .setClassToggle(this, 'items-appear')
     .addIndicators()
