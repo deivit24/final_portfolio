@@ -171,6 +171,18 @@ h1 {
     transform: translateX(0px); }
 
 @media screen and (max-width: 768px) {
+  #home .item-left,
+  #bio .item-left {
+    opacity: 0;
+    transform: translateX(-500px); }
+  #home .item-right,
+  #bio .item-right {
+    opacity: 0;
+    transform: translateX(500px); }
+  #home .items-appear,
+  #bio .items-appear {
+    opacity: 1;
+    transform: translateX(0px); }
   #home .col-md-4,
   #bio .col-md-4 {
     z-index: 10000 !important;
