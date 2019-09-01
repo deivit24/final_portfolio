@@ -74,9 +74,6 @@ h1 {
 //   }
 // }
 
-#main {
-}
-
 #home,
 #bio {
   transition: all 1s ease-in-out;
@@ -226,23 +223,94 @@ h1 {
 
 // Mobile
 @include mediaSm {
-  #name {
-    display: none;
-  }
-
-  #main {
-    margin-left: 0px;
-  }
-
   #home,
   #bio {
-    p {
-      margin-top: 50px;
-      font-size: 1.5rem !important;
+    .col-md-4 {
+      z-index: 10000 !important;
+      padding-left: 70px !important;
+      h1 {
+        display: none;
+      }
+      p {
+        font-size: 20px;
+      }
+      .btn-primary {
+        margin-top: 25px;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        font-size: 1rem;
+        border: none;
+        color: #fff;
+        background: #ff3300;
+        line-height: 1;
+        font-weight: bold;
+        padding: 18px 32px;
+        border-radius: 50px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        letter-spacing: 0.1em;
+        z-index: 100;
+      }
     }
     .col-md-8 {
-      h1 {
-        font-size: 3rem;
+      .dot1 {
+        background: #fff;
+        border-radius: 50%;
+        height: 300px !important;
+        width: 300px !important;
+        opacity: 0.8;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          font-size: 1rem !important;
+        }
+      }
+      .dot2 {
+        background: #fff;
+        border-radius: 50%;
+        height: 400px !important;
+        width: 400px !important;
+        opacity: 0.7;
+        position: absolute;
+        transition: all 0.8s ease-in-out;
+        margin: -200px 0px 0px -200px !important; /*
+    Put top edge and left edge in the center
+   */
+        top: 50%;
+        left: 50%;
+      }
+      .dot3 {
+        background: #fff;
+        border-radius: 50%;
+        height: 500px !important;
+        width: 500px !important;
+        opacity: 0.6;
+        position: absolute;
+        transition: all 1s ease-in-out;
+        margin: -250px 0px 0px -250px !important; /*
+    Put top edge and left edge in the center
+   */
+        top: 50%;
+        left: 50%;
+      }
+      .dot4 {
+        background: #fff;
+        border-radius: 50%;
+        height: 600px !important;
+        width: 600px !important;
+        opacity: 0.5;
+        position: absolute;
+        transition: all 1.5s ease-in-out;
+        margin: -300px 0px 0px -300px !important; /*
+    Put top edge and left edge in the center
+   */
+        top: 50%;
+        left: 50%;
       }
     }
   }
@@ -252,6 +320,7 @@ h1 {
   #home,
   #bio {
     .col-md-4 {
+      z-index: 10000 !important;
       padding-left: 70px !important;
       h1 {
         font-size: 4rem !important;
@@ -276,7 +345,7 @@ h1 {
         -o-transition: 0.3s;
         transition: 0.3s;
         letter-spacing: 0.1em;
-        z-index: 10000;
+        z-index: 100;
       }
     }
     .col-md-8 {
