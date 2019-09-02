@@ -314,12 +314,12 @@ h1 {
       }
     }
     .item-left {
-      opacity: 1;
-      transform: translateX(0px);
+      opacity: 0;
+      transform: translateX(-100px);
     }
     .item-right {
-      opacity: 1;
-      transform: translateX(0px);
+      opacity: 0;
+      transform: translateX(100px);
     }
     .items-appear {
       opacity: 1;

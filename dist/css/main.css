@@ -261,12 +261,12 @@ h1 {
     left: 50%; }
   #home .item-left,
   #bio .item-left {
-    opacity: 1;
-    transform: translateX(0px); }
+    opacity: 0;
+    transform: translateX(-100px); }
   #home .item-right,
   #bio .item-right {
-    opacity: 1;
-    transform: translateX(0px); }
+    opacity: 0;
+    transform: translateX(100px); }
   #home .items-appear,
   #bio .items-appear {
     opacity: 1;
