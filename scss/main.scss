@@ -313,6 +313,18 @@ h1 {
         left: 50%;
       }
     }
+    .item-left {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    .item-right {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    .items-appear {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
 }
 
