@@ -207,18 +207,18 @@ h1 {
     }
   }
 
-  // .item-left {
-  //   opacity: 0;
-  //   transform: translateX(-500px);
-  // }
-  // .item-right {
-  //   opacity: 0;
-  //   transform: translateX(500px);
-  // }
-  // .items-appear {
-  //   opacity: 1;
-  //   transform: translateX(0px);
-  // }
+  .item-left {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  .item-right {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  .items-appear {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 // Mobile
