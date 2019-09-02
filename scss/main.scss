@@ -232,7 +232,7 @@ h1 {
         display: none;
       }
       p {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
       }
       .btn-primary {
         margin-top: 25px;
@@ -267,7 +267,7 @@ h1 {
         justify-content: center;
 
         h1 {
-          font-size: 4rem !important;
+          font-size: 2rem !important;
         }
       }
       .dot2 {
@@ -315,11 +315,11 @@ h1 {
     }
     .item-left {
       opacity: 0;
-      transform: translateX(0px);
+      transform: translateX(-100px);
     }
     .item-right {
       opacity: 0;
-      transform: translateX(0px);
+      transform: translateX(-100px);
     }
     .items-appear {
       opacity: 1;
@@ -335,11 +335,11 @@ h1 {
       z-index: 10000 !important;
       padding-left: 70px !important;
       h1 {
-        font-size: 4rem !important;
+        font-size: 4rem;
         text-align: center !important;
       }
       p {
-        font-size: 2rem !important;
+        font-size: 2rem;
       }
       .btn-primary {
         margin-top: 25px;
@@ -522,7 +522,7 @@ h1 {
         justify-content: center;
 
         h1 {
-          font-size: 6rem !important;
+          font-size: 6rem;
         }
       }
       .dot2 {

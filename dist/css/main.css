@@ -180,7 +180,7 @@ h1 {
       display: none; }
     #home .col-md-4 p,
     #bio .col-md-4 p {
-      font-size: 2rem !important; }
+      font-size: 1.5rem !important; }
     #home .col-md-4 .btn-primary,
     #bio .col-md-4 .btn-primary {
       margin-top: 25px;
@@ -213,7 +213,7 @@ h1 {
     justify-content: center; }
     #home .col-md-8 .dot1 h1,
     #bio .col-md-8 .dot1 h1 {
-      font-size: 4rem !important; }
+      font-size: 2rem !important; }
   #home .col-md-8 .dot2,
   #bio .col-md-8 .dot2 {
     background: #fff;
@@ -262,11 +262,11 @@ h1 {
   #home .item-left,
   #bio .item-left {
     opacity: 0;
-    transform: translateX(0px); }
+    transform: translateX(-100px); }
   #home .item-right,
   #bio .item-right {
     opacity: 0;
-    transform: translateX(0px); }
+    transform: translateX(-100px); }
   #home .items-appear,
   #bio .items-appear {
     opacity: 1;
@@ -279,11 +279,11 @@ h1 {
     padding-left: 70px !important; }
     #home .col-md-4 h1,
     #bio .col-md-4 h1 {
-      font-size: 4rem !important;
+      font-size: 4rem;
       text-align: center !important; }
     #home .col-md-4 p,
     #bio .col-md-4 p {
-      font-size: 2rem !important; }
+      font-size: 2rem; }
     #home .col-md-4 .btn-primary,
     #bio .col-md-4 .btn-primary {
       margin-top: 25px;
@@ -452,7 +452,7 @@ h1 {
     justify-content: center; }
     #home .col-md-8 .dot1 h1,
     #bio .col-md-8 .dot1 h1 {
-      font-size: 6rem !important; }
+      font-size: 6rem; }
   #home .col-md-8 .dot2,
   #bio .col-md-8 .dot2 {
     background: #fff;
