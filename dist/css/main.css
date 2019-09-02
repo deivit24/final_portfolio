@@ -262,11 +262,11 @@ h1 {
   #home .item-left,
   #bio .item-left {
     opacity: 0;
-    transform: translateX(-100px); }
+    transform: translateX(0px); }
   #home .item-right,
   #bio .item-right {
     opacity: 0;
-    transform: translateX(100px); }
+    transform: translateX(0px); }
   #home .items-appear,
   #bio .items-appear {
     opacity: 1;

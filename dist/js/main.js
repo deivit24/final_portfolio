@@ -6,7 +6,7 @@ var items = new ScrollMagic.Controller();
 $('.item-left').each(function() {
   var itemSlide = new ScrollMagic.Scene({
     triggerElement: this,
-    triggerHook: 1,
+    triggerHook: 0.7,
     duration: '99%'
   })
     .setClassToggle(this, 'items-appear')
@@ -17,7 +17,7 @@ $('.item-left').each(function() {
 $('.item-right').each(function() {
   var itemSlide = new ScrollMagic.Scene({
     triggerElement: this,
-    triggerHook: 1,
+    triggerHook: 0.7,
     duration: '99%'
   })
     .setClassToggle(this, 'items-appear')

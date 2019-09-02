@@ -315,11 +315,11 @@ h1 {
     }
     .item-left {
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(0px);
     }
     .item-right {
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(0px);
     }
     .items-appear {
       opacity: 1;
