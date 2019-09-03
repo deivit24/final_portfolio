@@ -465,6 +465,10 @@ h1 {
       height: 55.633%;
       margin: 0 10%;
       top: 9.859%; }
+      #work .container-fluid .image .img-over h1,
+      #bio .container-fluid .image .img-over h1 {
+        font-size: 4rem;
+        left: 10%; }
       #work .container-fluid .image .page-num,
       #bio .container-fluid .image .page-num {
         font-size: 3rem; }
@@ -474,7 +478,7 @@ h1 {
     display: flex;
     flex-direction: row;
     top: 42vh !important;
-    left: 14vh !important;
+    left: 14.5vh !important;
     position: relative; } }
 
 @media screen and (max-width: 768px) {
