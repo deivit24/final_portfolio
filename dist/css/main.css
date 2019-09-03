@@ -473,8 +473,8 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
-    top: 45vh !important;
-    left: 13vh !important;
+    top: 42vh !important;
+    left: 14vh !important;
     position: relative; } }
 
 @media screen and (max-width: 768px) {
