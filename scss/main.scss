@@ -442,6 +442,7 @@ h1 {
       }
       p {
         font-size: 1.5rem !important;
+        padding-left: 0px !important;
       }
       .btn-primary {
         margin-top: 25px;
@@ -586,12 +587,10 @@ h1 {
 }
 
 @include mediaMd {
-  #home,
-  #bio,
-  #work {
+  #home {
     .col-md-4 {
       z-index: 10000 !important;
-      padding-left: 70px !important;
+      padding-left: 25px !important;
       h1 {
         font-size: 4rem;
         text-align: center !important;

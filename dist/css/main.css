@@ -356,7 +356,8 @@ h1 {
     #home .col-md-4 h1 {
       display: none; }
     #home .col-md-4 p {
-      font-size: 1.5rem !important; }
+      font-size: 1.5rem !important;
+      padding-left: 0px !important; }
     #home .col-md-4 .btn-primary {
       margin-top: 25px;
       font-family: 'Roboto', sans-serif;
@@ -482,23 +483,15 @@ h1 {
     position: relative; } }
 
 @media screen and (max-width: 768px) {
-  #home .col-md-4,
-  #bio .col-md-4,
-  #work .col-md-4 {
+  #home .col-md-4 {
     z-index: 10000 !important;
-    padding-left: 70px !important; }
-    #home .col-md-4 h1,
-    #bio .col-md-4 h1,
-    #work .col-md-4 h1 {
+    padding-left: 25px !important; }
+    #home .col-md-4 h1 {
       font-size: 4rem;
       text-align: center !important; }
-    #home .col-md-4 p,
-    #bio .col-md-4 p,
-    #work .col-md-4 p {
+    #home .col-md-4 p {
       font-size: 2rem; }
-    #home .col-md-4 .btn-primary,
-    #bio .col-md-4 .btn-primary,
-    #work .col-md-4 .btn-primary {
+    #home .col-md-4 .btn-primary {
       margin-top: 25px;
       font-family: 'Roboto', sans-serif;
       display: inline-block;
@@ -515,9 +508,7 @@ h1 {
       transition: 0.3s;
       letter-spacing: 0.1em;
       z-index: 100; }
-  #home .col-md-8 .dot1,
-  #bio .col-md-8 .dot1,
-  #work .col-md-8 .dot1 {
+  #home .col-md-8 .dot1 {
     background: #fff;
     border-radius: 50%;
     height: 300px !important;
@@ -528,13 +519,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    #home .col-md-8 .dot1 h1,
-    #bio .col-md-8 .dot1 h1,
-    #work .col-md-8 .dot1 h1 {
+    #home .col-md-8 .dot1 h1 {
       font-size: 4rem !important; }
-  #home .col-md-8 .dot2,
-  #bio .col-md-8 .dot2,
-  #work .col-md-8 .dot2 {
+  #home .col-md-8 .dot2 {
     background: #fff;
     border-radius: 50%;
     height: 400px !important;
@@ -548,9 +535,7 @@ h1 {
    */
     top: 50%;
     left: 50%; }
-  #home .col-md-8 .dot3,
-  #bio .col-md-8 .dot3,
-  #work .col-md-8 .dot3 {
+  #home .col-md-8 .dot3 {
     background: #fff;
     border-radius: 50%;
     height: 500px !important;
@@ -564,9 +549,7 @@ h1 {
    */
     top: 50%;
     left: 50%; }
-  #home .col-md-8 .dot4,
-  #bio .col-md-8 .dot4,
-  #work .col-md-8 .dot4 {
+  #home .col-md-8 .dot4 {
     background: #fff;
     border-radius: 50%;
     height: 600px !important;
