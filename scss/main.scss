@@ -90,15 +90,16 @@ h1 {
     .scroll-down {
       color: white;
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       right: 0;
+      letter-spacing: 3rem;
       font-size: 2rem;
       text-transform: lowercase;
+      transition: all 3s ease-in-out;
       -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       text-orientation: sideways;
-      transition: all 1s ease-in-out;
     }
     .title {
       color: #fff;
@@ -287,8 +288,7 @@ h1 {
     transform: translateX(-500px);
   }
   .item-down {
-    opacity: 0;
-    transform: translateY(100px);
+    letter-spacing: 3rem;
   }
   .item-up {
     opacity: 0;
@@ -297,6 +297,9 @@ h1 {
   .item-right {
     opacity: 0;
     transform: translateX(500px);
+  }
+  .scroll-appear {
+    letter-spacing: 0rem !important;
   }
   .items-appear {
     opacity: 1;

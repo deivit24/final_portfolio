@@ -39,10 +39,10 @@ $('.item-up').each(function() {
 $('.item-down').each(function() {
   var itemSlide = new ScrollMagic.Scene({
     triggerElement: this,
-    triggerHook: 0.9,
-    duration: '99%'
+    triggerHook: 1,
+    duration: '100%'
   })
-    .setClassToggle(this, 'items-appear')
+    .setClassToggle(this, 'scroll-appear')
     // .addIndicators()
     .addTo(items);
 });

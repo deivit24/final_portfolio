@@ -47,15 +47,16 @@ h1 {
   #bio .container-fluid .scroll-down {
     color: white;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
+    letter-spacing: 3rem;
     font-size: 2rem;
     text-transform: lowercase;
+    transition: all 3s ease-in-out;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-    text-orientation: sideways;
-    transition: all 1s ease-in-out; }
+    text-orientation: sideways; }
   #home .container-fluid .title,
   #work .container-fluid .title,
   #bio .container-fluid .title {
@@ -257,8 +258,7 @@ h1 {
 #home .item-down,
 #work .item-down,
 #bio .item-down {
-  opacity: 0;
-  transform: translateY(100px); }
+  letter-spacing: 3rem; }
 
 #home .item-up,
 #work .item-up,
@@ -271,6 +271,11 @@ h1 {
 #bio .item-right {
   opacity: 0;
   transform: translateX(500px); }
+
+#home .scroll-appear,
+#work .scroll-appear,
+#bio .scroll-appear {
+  letter-spacing: 0rem !important; }
 
 #home .items-appear,
 #work .items-appear,
