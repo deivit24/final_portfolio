@@ -138,6 +138,9 @@ h1 {
         text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
           0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
       }
+      .home-p {
+        font-size: 1.5rem;
+      }
       .btn-primary {
         margin-top: 25px;
         font-family: 'Roboto', sans-serif;
@@ -165,6 +168,7 @@ h1 {
       width: 53.125%;
       height: 74.81%;
       margin: 0 8% 0 auto;
+      transition: all 1s ease-in-out;
 
       .img-over {
         width: 100%;
@@ -182,6 +186,7 @@ h1 {
           color: #ff3300;
           text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
             0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+          transition: all 1s ease-in-out;
         }
       }
     }
@@ -301,9 +306,13 @@ h1 {
           margin-bottom: 0rem;
           text-shadow: 0 3px 10px rgba(2, 11, 22, 0.5);
         }
+        .home-title {
+          display: none;
+        }
         p {
           font-size: 2rem !important;
         }
+
         .line-one {
           display: block;
           width: 100px;
@@ -435,6 +444,9 @@ h1 {
           transition: all 0.5s ease-in-out;
           text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
             0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+        }
+        .home-p {
+          font-size: 1.2rem;
         }
         .btn-primary {
           margin-top: 25px;
