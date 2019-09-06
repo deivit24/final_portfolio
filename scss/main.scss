@@ -1,25 +1,10 @@
 @import 'mobil';
-
+@import 'bioPage';
 body,
 html {
   height: 100%;
 }
-// .screen-swipe-up {
-//   width: 100%;
-//   height: 100vh;
-//   background: #ff3300;
-//   position: fixed;
-//   z-index: 200000;
-//   top: -100%;
-// }
-// .screen-swipe-down {
-//   width: 100%;
-//   height: 100vh;
-//   background: #ff3300;
-//   position: fixed;
-//   z-index: 200000;
-//   bottom: -100%;
-// }
+
 #particles-js {
   z-index: -10;
   width: 100%;
@@ -55,40 +40,6 @@ h1 {
     font-size: 2rem;
   }
 }
-// Side Nav
-// .sidenav {
-//   height: 100%; /* Full-height: remove this if you want "auto" height */
-//   width: 160px; /* Set the width of the sidebar */
-//   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-//   z-index: 0; /* Stay on top */
-//   top: 33%; /* Stay at the top */
-//   left: 0;
-
-//   overflow-x: hidden; /* Disable horizontal scroll */
-//   padding-top: 20px;
-//   /* The navigation menu links */
-//   a {
-//     padding: 6px 8px 6px 16px;
-//     margin-bottom: 10px;
-//     border-right: 2px solid white;
-//     text-decoration: none;
-//     font-size: 22px;
-//     color: #818181;
-//     display: block;
-//     transform: translateX(-150px);
-//     transition: all 0.2s ease-in-out;
-//     &:hover {
-//       color: #f1f1f1;
-//       transform: translateX(0px);
-//       border: none;
-//     }
-//   }
-//   .newCurrent {
-//     color: #f1f1f1;
-//     transform: translateX(0px);
-//     border: none;
-//   }
-// }
 
 #home,
 #work,
@@ -108,7 +59,7 @@ h1 {
       position: absolute;
       bottom: 0;
       right: 0;
-      letter-spacing: 3rem;
+
       font-size: 2rem;
       text-transform: lowercase;
       transition: all 3s ease-in-out;
@@ -134,7 +85,6 @@ h1 {
         text-transform: uppercase;
         color: white;
         text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
-        transition: all 1s ease-in-out;
 
         span {
           color: #ff3300;
@@ -215,7 +165,6 @@ h1 {
           color: #ff3300;
           text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
             0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-          transition: all 1s ease-in-out;
         }
       }
     }
@@ -229,6 +178,7 @@ h1 {
         url('../img/design.jpg') no-repeat center;
       background-size: cover;
     }
+
     .image {
       display: block;
       position: relative;
@@ -304,7 +254,7 @@ h1 {
     transform: translateX(-500px);
   }
   .item-down {
-    letter-spacing: 3rem;
+    letter-spacing: 2em;
   }
   .item-up {
     opacity: 0;
@@ -315,12 +265,21 @@ h1 {
     transform: translateX(500px);
   }
   .scroll-appear {
-    letter-spacing: 0rem !important;
+    letter-spacing: 0em !important;
   }
   .items-appear {
     opacity: 1;
     transform: translateX(0px);
     transform: translateY(0px);
+  }
+  .img-bio-about {
+    display: block;
+    position: relative !important;
+    width: 60.677% !important;
+    height: 100vh !important;
+    margin: 0 0 0 auto !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 
