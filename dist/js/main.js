@@ -67,7 +67,7 @@ $('.img-cover').each(function() {
 $('#main').fullpage({
   easingcss3: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   scrollingSpeed: 1e3,
-  anchors: ['Home', 'Bio', 'Work', 'Knowledge', 'Contact'],
+  anchors: ['Homepage', 'Biopage', 'Workpage', 'Knowledgepage', 'Contactpage'],
   navigation: true,
   navigationPosition: 'left'
 });

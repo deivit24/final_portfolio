@@ -377,13 +377,13 @@ h1 {
     }
   }
   #fp-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     top: 42vh !important;
     left: 14.6vh !important;
     position: relative;
+    z-index: 5000;
+    color: white;
   }
 }
 
