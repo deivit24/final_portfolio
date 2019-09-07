@@ -287,10 +287,9 @@ h1 {
 // Mobile
 @include mediaSm {
   #fp-nav ul {
-    display: flex !important;
-    position: fixed !important;
-    top: 20rem !important;
-    left: 14vh !important;
+    position: relative !important;
+    top: 5rem !important;
+
     a {
       text-decoration: none;
     }
