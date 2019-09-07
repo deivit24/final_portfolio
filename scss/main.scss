@@ -22,6 +22,7 @@ html {
   }
   span {
     background: white !important;
+    left: 5px;
   }
 }
 h1 {
@@ -375,15 +376,6 @@ h1 {
         }
       }
     }
-  }
-  #fp-nav ul {
-    display: flex;
-    flex-direction: row;
-    top: 42vh !important;
-    left: 14.6vh !important;
-    position: relative;
-    z-index: 5000;
-    color: white;
   }
 }
 
