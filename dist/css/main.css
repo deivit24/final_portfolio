@@ -387,17 +387,14 @@ h1 {
   box-shadow: none; }
 
 @media screen and (max-width: 500px) {
-  #home #fp-nav ul,
-  #work #fp-nav ul,
-  #bio #fp-nav ul {
-    top: -250px !important; }
-    #home #fp-nav ul a,
-    #work #fp-nav ul a,
-    #bio #fp-nav ul a {
+  #fp-nav ul {
+    display: flex !important;
+    position: fixed !important;
+    top: 20rem !important;
+    left: 14vh !important; }
+    #fp-nav ul a {
       text-decoration: none; }
-    #home #fp-nav ul span,
-    #work #fp-nav ul span,
-    #bio #fp-nav ul span {
+    #fp-nav ul span {
       background: white !important;
       left: 5px; }
   #home .container-fluid,
