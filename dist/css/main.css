@@ -103,10 +103,10 @@ html {
   background: #000;
   background: linear-gradient(45deg, #000, #2b3640); }
 
-#fp-nav a {
+#fp-nav ul a {
   text-decoration: none; }
 
-#fp-nav span {
+#fp-nav ul span {
   background: white !important;
   left: 5px; }
 
@@ -387,6 +387,19 @@ h1 {
   box-shadow: none; }
 
 @media screen and (max-width: 500px) {
+  #home #fp-nav ul,
+  #work #fp-nav ul,
+  #bio #fp-nav ul {
+    top: -250px !important; }
+    #home #fp-nav ul a,
+    #work #fp-nav ul a,
+    #bio #fp-nav ul a {
+      text-decoration: none; }
+    #home #fp-nav ul span,
+    #work #fp-nav ul span,
+    #bio #fp-nav ul span {
+      background: white !important;
+      left: 5px; }
   #home .container-fluid,
   #work .container-fluid,
   #bio .container-fluid {

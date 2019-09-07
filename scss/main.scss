@@ -16,7 +16,7 @@ html {
 }
 // All h1
 
-#fp-nav {
+#fp-nav ul {
   a {
     text-decoration: none;
   }
@@ -289,6 +289,16 @@ h1 {
   #home,
   #work,
   #bio {
+    #fp-nav ul {
+      top: -250px !important;
+      a {
+        text-decoration: none;
+      }
+      span {
+        background: white !important;
+        left: 5px;
+      }
+    }
     .container-fluid {
       display: block !important;
       height: 100% !important;
