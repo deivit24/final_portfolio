@@ -1,13 +1,95 @@
 #bioPage {
   background: linear-gradient(45deg, #000, #2b3640);
   transition: all 1s ease-in-out; }
+  #bioPage .container-fluid {
+    height: auto; }
+  #bioPage .back-arrow {
+    position: fixed;
+    top: 80px;
+    left: 40px;
+    display: block;
+    font-size: 5rem;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #fff;
+    z-index: 300;
+    transition: all 0.5s ease-in-out; }
+    #bioPage .back-arrow:hover {
+      transform: translateX(-10px); }
   #bioPage .scrolling-bio {
-    height: 2000px;
     background: white; }
+  #bioPage #name {
+    color: white;
+    padding: 0px;
+    position: fixed;
+    text-decoration: none;
+    top: 10px;
+    left: 10px; }
+    #bioPage #name:hover {
+      opacity: 0.75; }
+    #bioPage #name h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2rem; }
 
-body,
-html {
-  height: 100%; }
+@media screen and (max-width: 768px) {
+  #bioPage .image-bio {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media screen and (max-width: 500px) {
+  #bioPage .back-arrow {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    display: block;
+    font-size: 3rem;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #fff;
+    opacity: 0.6;
+    z-index: 300;
+    transition: all 0.5s ease-in-out; }
+    #bioPage .back-arrow:hover {
+      transform: translateX(-10px); }
+  #bioPage #bio {
+    height: 100vh !important; }
+    #bioPage #bio .container-fluid {
+      padding: 1px; }
+      #bioPage #bio .container-fluid .title {
+        width: 87.5%;
+        margin: 0 6.25%;
+        top: auto;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        bottom: 5rem; }
+        #bioPage #bio .container-fluid .title h1 {
+          font-size: 3rem !important; }
+      #bioPage #bio .container-fluid p {
+        font-size: 1.5rem !important; }
+      #bioPage #bio .container-fluid .img-bio-about {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        height: 60% !important;
+        margin: 0 !important;
+        top: 0% !important;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+        #bioPage #bio .container-fluid .img-bio-about .image-over h1 {
+          left: 10% !important; }
+      #bioPage #bio .container-fluid .scrolling-bio {
+        position: relative;
+        margin-top: 12rem; } }
 
 #particles-js {
   z-index: -10;
@@ -291,7 +373,7 @@ h1 {
 #home .img-bio-about,
 #work .img-bio-about,
 #bio .img-bio-about {
-  display: block;
+  display: flex !important;
   position: relative !important;
   width: 60.677% !important;
   height: 100vh !important;

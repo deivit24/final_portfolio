@@ -1,9 +1,9 @@
 @import 'mobil';
 @import 'bioPage';
-body,
-html {
-  height: 100%;
-}
+// body,
+// html {
+//   height: 100%;
+// }
 
 #particles-js {
   z-index: -10;
@@ -273,7 +273,7 @@ h1 {
     transform: translateY(0px);
   }
   .img-bio-about {
-    display: block;
+    display: flex !important;
     position: relative !important;
     width: 60.677% !important;
     height: 100vh !important;
