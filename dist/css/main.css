@@ -524,7 +524,7 @@ h1 {
       #contact .container-fluid .title .email {
         padding-top: 15px;
         text-decoration: none;
-        font-size: 1rem; }
+        font-size: 1.3rem; }
         #home .container-fluid .title .email:hover,
         #work .container-fluid .title .email:hover,
         #bio .container-fluid .title .email:hover,
@@ -556,7 +556,9 @@ h1 {
       #bio .container-fluid .title .btn-primary,
       #contact .container-fluid .title .btn-primary {
         margin-top: 0px !important;
-        font-size: 0.8rem !important; }
+        font-size: 0.8rem !important;
+        position: relative;
+        left: 40%; }
     #home .container-fluid .image,
     #work .container-fluid .image,
     #bio .container-fluid .image,
