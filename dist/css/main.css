@@ -126,7 +126,8 @@ h1 {
 
 #home .container-fluid,
 #work .container-fluid,
-#bio .container-fluid {
+#bio .container-fluid,
+#contact .container-fluid {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -138,7 +139,8 @@ h1 {
   position: relative; }
   #home .container-fluid .scroll-down,
   #work .container-fluid .scroll-down,
-  #bio .container-fluid .scroll-down {
+  #bio .container-fluid .scroll-down,
+  #contact .container-fluid .scroll-down {
     color: white;
     position: absolute;
     bottom: 0;
@@ -152,7 +154,8 @@ h1 {
     text-orientation: sideways; }
   #home .container-fluid .title,
   #work .container-fluid .title,
-  #bio .container-fluid .title {
+  #bio .container-fluid .title,
+  #contact .container-fluid .title {
     color: #fff;
     position: absolute;
     overflow: hidden;
@@ -163,7 +166,8 @@ h1 {
     margin-left: 11%; }
     #home .container-fluid .title h1,
     #work .container-fluid .title h1,
-    #bio .container-fluid .title h1 {
+    #bio .container-fluid .title h1,
+    #contact .container-fluid .title h1 {
       font-size: 7rem;
       text-align: left;
       letter-spacing: 0.1em;
@@ -173,12 +177,14 @@ h1 {
       text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5); }
       #home .container-fluid .title h1 span,
       #work .container-fluid .title h1 span,
-      #bio .container-fluid .title h1 span {
+      #bio .container-fluid .title h1 span,
+      #contact .container-fluid .title h1 span {
         color: #ff3300;
         font-weight: 900; }
     #home .container-fluid .title .line-one,
     #work .container-fluid .title .line-one,
-    #bio .container-fluid .title .line-one {
+    #bio .container-fluid .title .line-one,
+    #contact .container-fluid .title .line-one {
       display: block;
       width: 100px;
       height: 5px;
@@ -186,7 +192,8 @@ h1 {
       transition: all 0.2s ease-in-out; }
     #home .container-fluid .title .line-two,
     #work .container-fluid .title .line-two,
-    #bio .container-fluid .title .line-two {
+    #bio .container-fluid .title .line-two,
+    #contact .container-fluid .title .line-two {
       display: block;
       width: 100px;
       height: 5px;
@@ -197,19 +204,51 @@ h1 {
       transition: all 1s ease-in-out; }
     #home .container-fluid .title p,
     #work .container-fluid .title p,
-    #bio .container-fluid .title p {
+    #bio .container-fluid .title p,
+    #contact .container-fluid .title p {
       color: white;
       font-size: 2rem;
       font-family: 'Roboto', sans-serif;
       transition: all 0.5s ease-in-out;
       text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+      #home .container-fluid .title p .fab,
+      #work .container-fluid .title p .fab,
+      #bio .container-fluid .title p .fab,
+      #contact .container-fluid .title p .fab {
+        font-size: 5rem;
+        padding: 15px; }
+      #home .container-fluid .title p a,
+      #work .container-fluid .title p a,
+      #bio .container-fluid .title p a,
+      #contact .container-fluid .title p a {
+        text-decoration: none;
+        color: white; }
+        #home .container-fluid .title p a:hover,
+        #work .container-fluid .title p a:hover,
+        #bio .container-fluid .title p a:hover,
+        #contact .container-fluid .title p a:hover {
+          opacity: 0.7; }
+    #home .container-fluid .title .email,
+    #work .container-fluid .title .email,
+    #bio .container-fluid .title .email,
+    #contact .container-fluid .title .email {
+      padding-top: 15px;
+      text-decoration: none;
+      color: white; }
+      #home .container-fluid .title .email:hover,
+      #work .container-fluid .title .email:hover,
+      #bio .container-fluid .title .email:hover,
+      #contact .container-fluid .title .email:hover {
+        opacity: 0.7; }
     #home .container-fluid .title .home-p,
     #work .container-fluid .title .home-p,
-    #bio .container-fluid .title .home-p {
+    #bio .container-fluid .title .home-p,
+    #contact .container-fluid .title .home-p {
       font-size: 1.5rem; }
     #home .container-fluid .title .btn-primary,
     #work .container-fluid .title .btn-primary,
-    #bio .container-fluid .title .btn-primary {
+    #bio .container-fluid .title .btn-primary,
+    #contact .container-fluid .title .btn-primary {
       margin-top: 25px;
       font-family: 'Roboto', sans-serif;
       display: inline-block;
@@ -228,7 +267,8 @@ h1 {
       z-index: 10000; }
   #home .container-fluid .image-home,
   #work .container-fluid .image-home,
-  #bio .container-fluid .image-home {
+  #bio .container-fluid .image-home,
+  #contact .container-fluid .image-home {
     background: url("../img/moon.png") no-repeat center;
     background-size: cover;
     display: block;
@@ -239,14 +279,16 @@ h1 {
     transition: all 1s ease-in-out; }
     #home .container-fluid .image-home .img-over,
     #work .container-fluid .image-home .img-over,
-    #bio .container-fluid .image-home .img-over {
+    #bio .container-fluid .image-home .img-over,
+    #contact .container-fluid .image-home .img-over {
       width: 100%;
       height: 100%;
       overflow: hidden;
       position: relative; }
       #home .container-fluid .image-home .img-over h1,
       #work .container-fluid .image-home .img-over h1,
-      #bio .container-fluid .image-home .img-over h1 {
+      #bio .container-fluid .image-home .img-over h1,
+      #contact .container-fluid .image-home .img-over h1 {
         position: relative;
         left: 20%;
         top: 50%;
@@ -258,17 +300,20 @@ h1 {
         text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
   #home .container-fluid .image-works,
   #work .container-fluid .image-works,
-  #bio .container-fluid .image-works {
+  #bio .container-fluid .image-works,
+  #contact .container-fluid .image-works {
     background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)), url("../img/homeimg.jpg") no-repeat center;
     background-size: cover; }
   #home .container-fluid .image-bio,
   #work .container-fluid .image-bio,
-  #bio .container-fluid .image-bio {
+  #bio .container-fluid .image-bio,
+  #contact .container-fluid .image-bio {
     background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)), url("../img/design.jpg") no-repeat center;
     background-size: cover; }
   #home .container-fluid .image,
   #work .container-fluid .image,
-  #bio .container-fluid .image {
+  #bio .container-fluid .image,
+  #contact .container-fluid .image {
     display: block;
     position: relative;
     width: 53.125%;
@@ -278,14 +323,16 @@ h1 {
     box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.6); }
     #home .container-fluid .image .img-over,
     #work .container-fluid .image .img-over,
-    #bio .container-fluid .image .img-over {
+    #bio .container-fluid .image .img-over,
+    #contact .container-fluid .image .img-over {
       width: 100%;
       height: 100%;
       overflow: hidden;
       position: relative; }
       #home .container-fluid .image .img-over h1,
       #work .container-fluid .image .img-over h1,
-      #bio .container-fluid .image .img-over h1 {
+      #bio .container-fluid .image .img-over h1,
+      #contact .container-fluid .image .img-over h1 {
         position: relative;
         left: 30%;
         top: 50%;
@@ -296,7 +343,8 @@ h1 {
         text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
       #home .container-fluid .image .img-over .img-cover,
       #work .container-fluid .image .img-over .img-cover,
-      #bio .container-fluid .image .img-over .img-cover {
+      #bio .container-fluid .image .img-over .img-cover,
+      #contact .container-fluid .image .img-over .img-cover {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -309,18 +357,21 @@ h1 {
         transform: translate3d(0, 0, 0); }
         #home .container-fluid .image .img-over .img-cover:last-child,
         #work .container-fluid .image .img-over .img-cover:last-child,
-        #bio .container-fluid .image .img-over .img-cover:last-child {
+        #bio .container-fluid .image .img-over .img-cover:last-child,
+        #contact .container-fluid .image .img-over .img-cover:last-child {
           background: #2b3640;
           transition: all 0.5s ease-in-out;
           border: none; }
       #home .container-fluid .image .img-over .img-appear,
       #work .container-fluid .image .img-over .img-appear,
-      #bio .container-fluid .image .img-over .img-appear {
+      #bio .container-fluid .image .img-over .img-appear,
+      #contact .container-fluid .image .img-over .img-appear {
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0); }
     #home .container-fluid .image .page-num,
     #work .container-fluid .image .page-num,
-    #bio .container-fluid .image .page-num {
+    #bio .container-fluid .image .page-num,
+    #contact .container-fluid .image .page-num {
       position: absolute;
       overflow-y: hidden;
       padding: 10px;
@@ -334,7 +385,8 @@ h1 {
       transition: all 1s ease-in-out; }
       #home .container-fluid .image .page-num h1,
       #work .container-fluid .image .page-num h1,
-      #bio .container-fluid .image .page-num h1 {
+      #bio .container-fluid .image .page-num h1,
+      #contact .container-fluid .image .page-num h1 {
         line-height: 1.1;
         text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
         z-index: 200;
@@ -342,42 +394,49 @@ h1 {
 
 #home .item-left,
 #work .item-left,
-#bio .item-left {
+#bio .item-left,
+#contact .item-left {
   opacity: 0;
   transform: translateX(-500px); }
 
 #home .item-down,
 #work .item-down,
-#bio .item-down {
+#bio .item-down,
+#contact .item-down {
   letter-spacing: 2em; }
 
 #home .item-up,
 #work .item-up,
-#bio .item-up {
+#bio .item-up,
+#contact .item-up {
   opacity: 0;
   transform: translateY(-100px); }
 
 #home .item-right,
 #work .item-right,
-#bio .item-right {
+#bio .item-right,
+#contact .item-right {
   opacity: 0;
   transform: translateX(500px); }
 
 #home .scroll-appear,
 #work .scroll-appear,
-#bio .scroll-appear {
+#bio .scroll-appear,
+#contact .scroll-appear {
   letter-spacing: 0em !important; }
 
 #home .items-appear,
 #work .items-appear,
-#bio .items-appear {
+#bio .items-appear,
+#contact .items-appear {
   opacity: 1;
   transform: translateX(0px);
   transform: translateY(0px); }
 
 #home .img-bio-about,
 #work .img-bio-about,
-#bio .img-bio-about {
+#bio .img-bio-about,
+#contact .img-bio-about {
   display: flex !important;
   position: relative !important;
   width: 60.677% !important;
@@ -397,7 +456,8 @@ h1 {
       left: 5px; }
   #home .container-fluid,
   #work .container-fluid,
-  #bio .container-fluid {
+  #bio .container-fluid,
+  #contact .container-fluid {
     display: block !important;
     height: 100% !important;
     position: absolute !important;
@@ -406,11 +466,13 @@ h1 {
     max-height: 950px; }
     #home .container-fluid .scroll-down,
     #work .container-fluid .scroll-down,
-    #bio .container-fluid .scroll-down {
+    #bio .container-fluid .scroll-down,
+    #contact .container-fluid .scroll-down {
       font-size: 1rem; }
     #home .container-fluid .title,
     #work .container-fluid .title,
-    #bio .container-fluid .title {
+    #bio .container-fluid .title,
+    #contact .container-fluid .title {
       width: 87.5%;
       margin: 0 6.25%;
       top: auto !important;
@@ -419,25 +481,59 @@ h1 {
       bottom: 0rem; }
       #home .container-fluid .title h1,
       #work .container-fluid .title h1,
-      #bio .container-fluid .title h1 {
+      #bio .container-fluid .title h1,
+      #contact .container-fluid .title h1 {
         font-size: 2rem !important;
         margin-bottom: 0rem;
         text-shadow: 0 3px 10px rgba(2, 11, 22, 0.5); }
       #home .container-fluid .title .home-title,
       #work .container-fluid .title .home-title,
-      #bio .container-fluid .title .home-title {
+      #bio .container-fluid .title .home-title,
+      #contact .container-fluid .title .home-title {
         display: none; }
       #home .container-fluid .title p,
       #work .container-fluid .title p,
-      #bio .container-fluid .title p {
+      #bio .container-fluid .title p,
+      #contact .container-fluid .title p {
         font-size: 2rem !important; }
+        #home .container-fluid .title p .fab,
+        #work .container-fluid .title p .fab,
+        #bio .container-fluid .title p .fab,
+        #contact .container-fluid .title p .fab {
+          font-size: 2rem;
+          padding: 15px; }
+        #home .container-fluid .title p a,
+        #work .container-fluid .title p a,
+        #bio .container-fluid .title p a,
+        #contact .container-fluid .title p a {
+          text-decoration: none;
+          color: white; }
+          #home .container-fluid .title p a:hover,
+          #work .container-fluid .title p a:hover,
+          #bio .container-fluid .title p a:hover,
+          #contact .container-fluid .title p a:hover {
+            opacity: 0.7; }
       #home .container-fluid .title .home-p,
       #work .container-fluid .title .home-p,
-      #bio .container-fluid .title .home-p {
+      #bio .container-fluid .title .home-p,
+      #contact .container-fluid .title .home-p {
         font-size: 1.5rem !important; }
+      #home .container-fluid .title .email,
+      #work .container-fluid .title .email,
+      #bio .container-fluid .title .email,
+      #contact .container-fluid .title .email {
+        padding-top: 15px;
+        text-decoration: none;
+        font-size: 1rem; }
+        #home .container-fluid .title .email:hover,
+        #work .container-fluid .title .email:hover,
+        #bio .container-fluid .title .email:hover,
+        #contact .container-fluid .title .email:hover {
+          opacity: 0.7; }
       #home .container-fluid .title .line-one,
       #work .container-fluid .title .line-one,
-      #bio .container-fluid .title .line-one {
+      #bio .container-fluid .title .line-one,
+      #contact .container-fluid .title .line-one {
         display: block;
         width: 100px;
         height: 3px;
@@ -445,7 +541,8 @@ h1 {
         transition: all 0.2s ease-in-out; }
       #home .container-fluid .title .line-two,
       #work .container-fluid .title .line-two,
-      #bio .container-fluid .title .line-two {
+      #bio .container-fluid .title .line-two,
+      #contact .container-fluid .title .line-two {
         display: block;
         width: 100px;
         height: 3px;
@@ -456,49 +553,57 @@ h1 {
         transition: all 1s ease-in-out; }
       #home .container-fluid .title .btn-primary,
       #work .container-fluid .title .btn-primary,
-      #bio .container-fluid .title .btn-primary {
+      #bio .container-fluid .title .btn-primary,
+      #contact .container-fluid .title .btn-primary {
         margin-top: 0px !important;
         font-size: 0.8rem !important; }
     #home .container-fluid .image,
     #work .container-fluid .image,
-    #bio .container-fluid .image {
+    #bio .container-fluid .image,
+    #contact .container-fluid .image {
       width: 80% !important;
       height: 55.633% !important;
       margin: 0 10% !important;
       top: 9.859%; }
       #home .container-fluid .image .img-over,
       #work .container-fluid .image .img-over,
-      #bio .container-fluid .image .img-over {
+      #bio .container-fluid .image .img-over,
+      #contact .container-fluid .image .img-over {
         width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative; }
         #home .container-fluid .image .img-over h1,
         #work .container-fluid .image .img-over h1,
-        #bio .container-fluid .image .img-over h1 {
+        #bio .container-fluid .image .img-over h1,
+        #contact .container-fluid .image .img-over h1 {
           font-size: 3rem !important;
           left: 0% !important; }
       #home .container-fluid .image .page-num,
       #work .container-fluid .image .page-num,
-      #bio .container-fluid .image .page-num {
+      #bio .container-fluid .image .page-num,
+      #contact .container-fluid .image .page-num {
         font-size: 3rem !important; }
     #home .container-fluid .image-home,
     #work .container-fluid .image-home,
-    #bio .container-fluid .image-home {
+    #bio .container-fluid .image-home,
+    #contact .container-fluid .image-home {
       width: 80%;
       height: 55.633%;
       margin: 0 10%;
       top: 9.859%; }
       #home .container-fluid .image-home .img-over h1,
       #work .container-fluid .image-home .img-over h1,
-      #bio .container-fluid .image-home .img-over h1 {
+      #bio .container-fluid .image-home .img-over h1,
+      #contact .container-fluid .image-home .img-over h1 {
         font-size: 2.5rem !important;
         left: 0% !important; } }
 
 @media screen and (max-width: 768px) {
   #home .container-fluid,
   #work .container-fluid,
-  #bio .container-fluid {
+  #bio .container-fluid,
+  #contact .container-fluid {
     width: 100%;
     height: 100vh;
     display: -webkit-box;
@@ -510,7 +615,8 @@ h1 {
     position: relative; }
     #home .container-fluid .title,
     #work .container-fluid .title,
-    #bio .container-fluid .title {
+    #bio .container-fluid .title,
+    #contact .container-fluid .title {
       color: #fff;
       position: absolute;
       overflow: hidden;
@@ -521,7 +627,8 @@ h1 {
       margin-left: 11%; }
       #home .container-fluid .title h1,
       #work .container-fluid .title h1,
-      #bio .container-fluid .title h1 {
+      #bio .container-fluid .title h1,
+      #contact .container-fluid .title h1 {
         font-size: 7rem;
         text-align: left;
         letter-spacing: 0.1em;
@@ -532,12 +639,14 @@ h1 {
         transition: all 1s ease-in-out; }
         #home .container-fluid .title h1 span,
         #work .container-fluid .title h1 span,
-        #bio .container-fluid .title h1 span {
+        #bio .container-fluid .title h1 span,
+        #contact .container-fluid .title h1 span {
           color: #ff3300;
           font-weight: 900; }
       #home .container-fluid .title .line-one,
       #work .container-fluid .title .line-one,
-      #bio .container-fluid .title .line-one {
+      #bio .container-fluid .title .line-one,
+      #contact .container-fluid .title .line-one {
         display: block;
         width: 100px;
         height: 5px;
@@ -545,7 +654,8 @@ h1 {
         transition: all 0.2s ease-in-out; }
       #home .container-fluid .title .line-two,
       #work .container-fluid .title .line-two,
-      #bio .container-fluid .title .line-two {
+      #bio .container-fluid .title .line-two,
+      #contact .container-fluid .title .line-two {
         display: block;
         width: 100px;
         height: 5px;
@@ -556,7 +666,8 @@ h1 {
         transition: all 1s ease-in-out; }
       #home .container-fluid .title p,
       #work .container-fluid .title p,
-      #bio .container-fluid .title p {
+      #bio .container-fluid .title p,
+      #contact .container-fluid .title p {
         color: white;
         font-size: 2rem;
         font-family: 'Roboto', sans-serif;
@@ -564,11 +675,13 @@ h1 {
         text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
       #home .container-fluid .title .home-p,
       #work .container-fluid .title .home-p,
-      #bio .container-fluid .title .home-p {
+      #bio .container-fluid .title .home-p,
+      #contact .container-fluid .title .home-p {
         font-size: 1.2rem; }
       #home .container-fluid .title .btn-primary,
       #work .container-fluid .title .btn-primary,
-      #bio .container-fluid .title .btn-primary {
+      #bio .container-fluid .title .btn-primary,
+      #contact .container-fluid .title .btn-primary {
         margin-top: 25px;
         font-family: 'Roboto', sans-serif;
         display: inline-block;
@@ -587,23 +700,27 @@ h1 {
         z-index: 10000; }
     #home .container-fluid .image-works,
     #work .container-fluid .image-works,
-    #bio .container-fluid .image-works {
+    #bio .container-fluid .image-works,
+    #contact .container-fluid .image-works {
       background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)), url("../img/homeimg.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image-home .img-over h1,
     #work .container-fluid .image-home .img-over h1,
-    #bio .container-fluid .image-home .img-over h1 {
+    #bio .container-fluid .image-home .img-over h1,
+    #contact .container-fluid .image-home .img-over h1 {
       font-size: 3rem;
       left: 10%;
       top: 65%; }
     #home .container-fluid .image-bio,
     #work .container-fluid .image-bio,
-    #bio .container-fluid .image-bio {
+    #bio .container-fluid .image-bio,
+    #contact .container-fluid .image-bio {
       background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)), url("../img/design.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image,
     #work .container-fluid .image,
-    #bio .container-fluid .image {
+    #bio .container-fluid .image,
+    #contact .container-fluid .image {
       display: block;
       position: relative;
       width: 53.125%;
@@ -613,14 +730,16 @@ h1 {
       box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.6); }
       #home .container-fluid .image .img-over,
       #work .container-fluid .image .img-over,
-      #bio .container-fluid .image .img-over {
+      #bio .container-fluid .image .img-over,
+      #contact .container-fluid .image .img-over {
         width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative; }
         #home .container-fluid .image .img-over h1,
         #work .container-fluid .image .img-over h1,
-        #bio .container-fluid .image .img-over h1 {
+        #bio .container-fluid .image .img-over h1,
+        #contact .container-fluid .image .img-over h1 {
           position: relative;
           left: 10%;
           top: 50%;
@@ -631,7 +750,8 @@ h1 {
           text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
         #home .container-fluid .image .img-over .img-cover,
         #work .container-fluid .image .img-over .img-cover,
-        #bio .container-fluid .image .img-over .img-cover {
+        #bio .container-fluid .image .img-over .img-cover,
+        #contact .container-fluid .image .img-over .img-cover {
           position: absolute;
           width: 100%;
           height: 100%;
@@ -644,18 +764,21 @@ h1 {
           transform: translate3d(0, 0, 0); }
           #home .container-fluid .image .img-over .img-cover:last-child,
           #work .container-fluid .image .img-over .img-cover:last-child,
-          #bio .container-fluid .image .img-over .img-cover:last-child {
+          #bio .container-fluid .image .img-over .img-cover:last-child,
+          #contact .container-fluid .image .img-over .img-cover:last-child {
             background: #2b3640;
             transition: all 0.5s ease-in-out;
             border: none; }
         #home .container-fluid .image .img-over .img-appear,
         #work .container-fluid .image .img-over .img-appear,
-        #bio .container-fluid .image .img-over .img-appear {
+        #bio .container-fluid .image .img-over .img-appear,
+        #contact .container-fluid .image .img-over .img-appear {
           -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0); }
       #home .container-fluid .image .page-num,
       #work .container-fluid .image .page-num,
-      #bio .container-fluid .image .page-num {
+      #bio .container-fluid .image .page-num,
+      #contact .container-fluid .image .page-num {
         position: absolute;
         overflow-y: hidden;
         padding: 10px;
@@ -668,31 +791,36 @@ h1 {
         z-index: 20000 !important; }
         #home .container-fluid .image .page-num h1,
         #work .container-fluid .image .page-num h1,
-        #bio .container-fluid .image .page-num h1 {
+        #bio .container-fluid .image .page-num h1,
+        #contact .container-fluid .image .page-num h1 {
           line-height: 1.1;
           text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
           z-index: 200;
           font-size: 80%; }
   #home .item-left,
   #work .item-left,
-  #bio .item-left {
+  #bio .item-left,
+  #contact .item-left {
     opacity: 0;
     transform: translateX(-500px); }
   #home .item-right,
   #work .item-right,
-  #bio .item-right {
+  #bio .item-right,
+  #contact .item-right {
     opacity: 0;
     transform: translateX(500px); }
   #home .items-appear,
   #work .items-appear,
-  #bio .items-appear {
+  #bio .items-appear,
+  #contact .items-appear {
     opacity: 1;
     transform: translateX(0px); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   #home .container-fluid,
   #work .container-fluid,
-  #bio .container-fluid {
+  #bio .container-fluid,
+  #contact .container-fluid {
     width: 100%;
     height: 100vh;
     display: -webkit-box;
@@ -704,7 +832,8 @@ h1 {
     position: relative; }
     #home .container-fluid .title,
     #work .container-fluid .title,
-    #bio .container-fluid .title {
+    #bio .container-fluid .title,
+    #contact .container-fluid .title {
       color: #fff;
       position: absolute;
       overflow: hidden;
@@ -715,7 +844,8 @@ h1 {
       margin-left: 11%; }
       #home .container-fluid .title h1,
       #work .container-fluid .title h1,
-      #bio .container-fluid .title h1 {
+      #bio .container-fluid .title h1,
+      #contact .container-fluid .title h1 {
         font-size: 7rem;
         text-align: left;
         letter-spacing: 0.1em;
@@ -726,12 +856,14 @@ h1 {
         transition: all 1s ease-in-out; }
         #home .container-fluid .title h1 span,
         #work .container-fluid .title h1 span,
-        #bio .container-fluid .title h1 span {
+        #bio .container-fluid .title h1 span,
+        #contact .container-fluid .title h1 span {
           color: #ff3300;
           font-weight: 900; }
       #home .container-fluid .title .line-one,
       #work .container-fluid .title .line-one,
-      #bio .container-fluid .title .line-one {
+      #bio .container-fluid .title .line-one,
+      #contact .container-fluid .title .line-one {
         display: block;
         width: 100px;
         height: 5px;
@@ -739,7 +871,8 @@ h1 {
         transition: all 0.2s ease-in-out; }
       #home .container-fluid .title .line-two,
       #work .container-fluid .title .line-two,
-      #bio .container-fluid .title .line-two {
+      #bio .container-fluid .title .line-two,
+      #contact .container-fluid .title .line-two {
         display: block;
         width: 100px;
         height: 5px;
@@ -750,7 +883,8 @@ h1 {
         transition: all 1s ease-in-out; }
       #home .container-fluid .title p,
       #work .container-fluid .title p,
-      #bio .container-fluid .title p {
+      #bio .container-fluid .title p,
+      #contact .container-fluid .title p {
         color: white;
         font-size: 2rem;
         font-family: 'Roboto', sans-serif;
@@ -758,7 +892,8 @@ h1 {
         text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
       #home .container-fluid .title .btn-primary,
       #work .container-fluid .title .btn-primary,
-      #bio .container-fluid .title .btn-primary {
+      #bio .container-fluid .title .btn-primary,
+      #contact .container-fluid .title .btn-primary {
         margin-top: 25px;
         font-family: 'Roboto', sans-serif;
         display: inline-block;
@@ -777,23 +912,27 @@ h1 {
         z-index: 10000; }
     #home .container-fluid .image-works,
     #work .container-fluid .image-works,
-    #bio .container-fluid .image-works {
+    #bio .container-fluid .image-works,
+    #contact .container-fluid .image-works {
       background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)), url("../img/homeimg.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image-bio,
     #work .container-fluid .image-bio,
-    #bio .container-fluid .image-bio {
+    #bio .container-fluid .image-bio,
+    #contact .container-fluid .image-bio {
       background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)), url("../img/design.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image-home .img-over h1,
     #work .container-fluid .image-home .img-over h1,
-    #bio .container-fluid .image-home .img-over h1 {
+    #bio .container-fluid .image-home .img-over h1,
+    #contact .container-fluid .image-home .img-over h1 {
       left: 10%;
       top: 60%;
       font-size: 5rem; }
     #home .container-fluid .image,
     #work .container-fluid .image,
-    #bio .container-fluid .image {
+    #bio .container-fluid .image,
+    #contact .container-fluid .image {
       display: block;
       position: relative;
       width: 53.125%;
@@ -803,14 +942,16 @@ h1 {
       box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.6); }
       #home .container-fluid .image .img-over,
       #work .container-fluid .image .img-over,
-      #bio .container-fluid .image .img-over {
+      #bio .container-fluid .image .img-over,
+      #contact .container-fluid .image .img-over {
         width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative; }
         #home .container-fluid .image .img-over h1,
         #work .container-fluid .image .img-over h1,
-        #bio .container-fluid .image .img-over h1 {
+        #bio .container-fluid .image .img-over h1,
+        #contact .container-fluid .image .img-over h1 {
           position: relative;
           left: 10%;
           top: 50%;
@@ -821,7 +962,8 @@ h1 {
           text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
         #home .container-fluid .image .img-over .img-cover,
         #work .container-fluid .image .img-over .img-cover,
-        #bio .container-fluid .image .img-over .img-cover {
+        #bio .container-fluid .image .img-over .img-cover,
+        #contact .container-fluid .image .img-over .img-cover {
           position: absolute;
           width: 100%;
           height: 100%;
@@ -834,18 +976,21 @@ h1 {
           transform: translate3d(0, 0, 0); }
           #home .container-fluid .image .img-over .img-cover:last-child,
           #work .container-fluid .image .img-over .img-cover:last-child,
-          #bio .container-fluid .image .img-over .img-cover:last-child {
+          #bio .container-fluid .image .img-over .img-cover:last-child,
+          #contact .container-fluid .image .img-over .img-cover:last-child {
             background: #2b3640;
             transition: all 0.5s ease-in-out;
             border: none; }
         #home .container-fluid .image .img-over .img-appear,
         #work .container-fluid .image .img-over .img-appear,
-        #bio .container-fluid .image .img-over .img-appear {
+        #bio .container-fluid .image .img-over .img-appear,
+        #contact .container-fluid .image .img-over .img-appear {
           -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0); }
       #home .container-fluid .image .page-num,
       #work .container-fluid .image .page-num,
-      #bio .container-fluid .image .page-num {
+      #bio .container-fluid .image .page-num,
+      #contact .container-fluid .image .page-num {
         position: absolute;
         overflow-y: hidden;
         padding: 10px;
@@ -858,31 +1003,36 @@ h1 {
         z-index: 20000 !important; }
         #home .container-fluid .image .page-num h1,
         #work .container-fluid .image .page-num h1,
-        #bio .container-fluid .image .page-num h1 {
+        #bio .container-fluid .image .page-num h1,
+        #contact .container-fluid .image .page-num h1 {
           line-height: 1.1;
           text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
           z-index: 200;
           font-size: 80%; }
   #home .item-left,
   #work .item-left,
-  #bio .item-left {
+  #bio .item-left,
+  #contact .item-left {
     opacity: 0;
     transform: translateX(-500px); }
   #home .item-right,
   #work .item-right,
-  #bio .item-right {
+  #bio .item-right,
+  #contact .item-right {
     opacity: 0;
     transform: translateX(500px); }
   #home .items-appear,
   #work .items-appear,
-  #bio .items-appear {
+  #bio .items-appear,
+  #contact .items-appear {
     opacity: 1;
     transform: translateX(0px); } }
 
 @media screen and (min-width: 1171px) and (max-width: 1499px) {
   #home .container-fluid,
   #work .container-fluid,
-  #bio .container-fluid {
+  #bio .container-fluid,
+  #contact .container-fluid {
     width: 100%;
     height: 100vh;
     display: -webkit-box;
@@ -894,7 +1044,8 @@ h1 {
     position: relative; }
     #home .container-fluid .title,
     #work .container-fluid .title,
-    #bio .container-fluid .title {
+    #bio .container-fluid .title,
+    #contact .container-fluid .title {
       color: #fff;
       position: absolute;
       overflow: hidden;
@@ -905,7 +1056,8 @@ h1 {
       margin-left: 11%; }
       #home .container-fluid .title h1,
       #work .container-fluid .title h1,
-      #bio .container-fluid .title h1 {
+      #bio .container-fluid .title h1,
+      #contact .container-fluid .title h1 {
         font-size: 7rem;
         text-align: left;
         letter-spacing: 0.1em;
@@ -916,12 +1068,14 @@ h1 {
         transition: all 1s ease-in-out; }
         #home .container-fluid .title h1 span,
         #work .container-fluid .title h1 span,
-        #bio .container-fluid .title h1 span {
+        #bio .container-fluid .title h1 span,
+        #contact .container-fluid .title h1 span {
           color: #ff3300;
           font-weight: 900; }
       #home .container-fluid .title .line-one,
       #work .container-fluid .title .line-one,
-      #bio .container-fluid .title .line-one {
+      #bio .container-fluid .title .line-one,
+      #contact .container-fluid .title .line-one {
         display: block;
         width: 100px;
         height: 5px;
@@ -929,7 +1083,8 @@ h1 {
         transition: all 0.2s ease-in-out; }
       #home .container-fluid .title .line-two,
       #work .container-fluid .title .line-two,
-      #bio .container-fluid .title .line-two {
+      #bio .container-fluid .title .line-two,
+      #contact .container-fluid .title .line-two {
         display: block;
         width: 100px;
         height: 5px;
@@ -940,7 +1095,8 @@ h1 {
         transition: all 1s ease-in-out; }
       #home .container-fluid .title p,
       #work .container-fluid .title p,
-      #bio .container-fluid .title p {
+      #bio .container-fluid .title p,
+      #contact .container-fluid .title p {
         color: white;
         font-size: 2rem;
         font-family: 'Roboto', sans-serif;
@@ -948,7 +1104,8 @@ h1 {
         text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
       #home .container-fluid .title .btn-primary,
       #work .container-fluid .title .btn-primary,
-      #bio .container-fluid .title .btn-primary {
+      #bio .container-fluid .title .btn-primary,
+      #contact .container-fluid .title .btn-primary {
         margin-top: 25px;
         font-family: 'Roboto', sans-serif;
         display: inline-block;
@@ -967,17 +1124,20 @@ h1 {
         z-index: 10000; }
     #home .container-fluid .image-works,
     #work .container-fluid .image-works,
-    #bio .container-fluid .image-works {
+    #bio .container-fluid .image-works,
+    #contact .container-fluid .image-works {
       background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)), url("../img/homeimg.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image-bio,
     #work .container-fluid .image-bio,
-    #bio .container-fluid .image-bio {
+    #bio .container-fluid .image-bio,
+    #contact .container-fluid .image-bio {
       background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)), url("../img/design.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image,
     #work .container-fluid .image,
-    #bio .container-fluid .image {
+    #bio .container-fluid .image,
+    #contact .container-fluid .image {
       display: block;
       position: relative;
       width: 53.125%;
@@ -987,14 +1147,16 @@ h1 {
       box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.6); }
       #home .container-fluid .image .img-over,
       #work .container-fluid .image .img-over,
-      #bio .container-fluid .image .img-over {
+      #bio .container-fluid .image .img-over,
+      #contact .container-fluid .image .img-over {
         width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative; }
         #home .container-fluid .image .img-over h1,
         #work .container-fluid .image .img-over h1,
-        #bio .container-fluid .image .img-over h1 {
+        #bio .container-fluid .image .img-over h1,
+        #contact .container-fluid .image .img-over h1 {
           position: relative;
           left: 10%;
           top: 50%;
@@ -1005,7 +1167,8 @@ h1 {
           text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
         #home .container-fluid .image .img-over .img-cover,
         #work .container-fluid .image .img-over .img-cover,
-        #bio .container-fluid .image .img-over .img-cover {
+        #bio .container-fluid .image .img-over .img-cover,
+        #contact .container-fluid .image .img-over .img-cover {
           position: absolute;
           width: 100%;
           height: 100%;
@@ -1018,18 +1181,21 @@ h1 {
           transform: translate3d(0, 0, 0); }
           #home .container-fluid .image .img-over .img-cover:last-child,
           #work .container-fluid .image .img-over .img-cover:last-child,
-          #bio .container-fluid .image .img-over .img-cover:last-child {
+          #bio .container-fluid .image .img-over .img-cover:last-child,
+          #contact .container-fluid .image .img-over .img-cover:last-child {
             background: #2b3640;
             transition: all 0.5s ease-in-out;
             border: none; }
         #home .container-fluid .image .img-over .img-appear,
         #work .container-fluid .image .img-over .img-appear,
-        #bio .container-fluid .image .img-over .img-appear {
+        #bio .container-fluid .image .img-over .img-appear,
+        #contact .container-fluid .image .img-over .img-appear {
           -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0); }
       #home .container-fluid .image .page-num,
       #work .container-fluid .image .page-num,
-      #bio .container-fluid .image .page-num {
+      #bio .container-fluid .image .page-num,
+      #contact .container-fluid .image .page-num {
         position: absolute;
         overflow-y: hidden;
         padding: 10px;
@@ -1042,23 +1208,27 @@ h1 {
         z-index: 20000 !important; }
         #home .container-fluid .image .page-num h1,
         #work .container-fluid .image .page-num h1,
-        #bio .container-fluid .image .page-num h1 {
+        #bio .container-fluid .image .page-num h1,
+        #contact .container-fluid .image .page-num h1 {
           line-height: 1.1;
           text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
           z-index: 200;
           font-size: 80%; }
   #home .item-left,
   #work .item-left,
-  #bio .item-left {
+  #bio .item-left,
+  #contact .item-left {
     opacity: 0;
     transform: translateX(-500px); }
   #home .item-right,
   #work .item-right,
-  #bio .item-right {
+  #bio .item-right,
+  #contact .item-right {
     opacity: 0;
     transform: translateX(500px); }
   #home .items-appear,
   #work .items-appear,
-  #bio .items-appear {
+  #bio .items-appear,
+  #contact .items-appear {
     opacity: 1;
     transform: translateX(0px); } }
