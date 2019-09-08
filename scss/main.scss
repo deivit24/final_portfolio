@@ -3,6 +3,8 @@
 body,
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #particles-js {
@@ -158,6 +160,11 @@ h1 {
         transition: 0.3s;
         letter-spacing: 0.1em;
         z-index: 10000;
+        &:hover {
+          color: #ff3300;
+          background: white;
+          border: 2px solid #ff3300;
+        }
       }
     }
     .image-home {
@@ -190,13 +197,19 @@ h1 {
       }
     }
     .image-works {
-      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)),
+      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)),
         url('../img/homeimg.jpg') no-repeat center;
       background-size: cover;
     }
     .image-bio {
       background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)),
         url('../img/design.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    .image-contact {
+      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)),
+        url('../img/contact.jpg') no-repeat center;
       background-size: cover;
     }
 
