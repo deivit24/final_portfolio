@@ -1,6 +1,110 @@
 #bioPage {
   background: linear-gradient(45deg, #000, #2b3640);
   transition: all 1s ease-in-out; }
+  #bioPage a,
+  #bioPage abbr,
+  #bioPage acronym,
+  #bioPage address,
+  #bioPage applet,
+  #bioPage article,
+  #bioPage aside,
+  #bioPage audio,
+  #bioPage b,
+  #bioPage big,
+  #bioPage blockquote,
+  #bioPage body,
+  #bioPage canvas,
+  #bioPage caption,
+  #bioPage center,
+  #bioPage cite,
+  #bioPage code,
+  #bioPage dd,
+  #bioPage del,
+  #bioPage details,
+  #bioPage dfn,
+  #bioPage div,
+  #bioPage dl,
+  #bioPage dt,
+  #bioPage em,
+  #bioPage embed,
+  #bioPage fieldset,
+  #bioPage figcaption,
+  #bioPage figure,
+  #bioPage footer,
+  #bioPage form,
+  #bioPage h1,
+  #bioPage h2,
+  #bioPage h3,
+  #bioPage h4,
+  #bioPage h5,
+  #bioPage h6,
+  #bioPage header,
+  #bioPage hgroup,
+  #bioPage html,
+  #bioPage i,
+  #bioPage iframe,
+  #bioPage img,
+  #bioPage ins,
+  #bioPage kbd,
+  #bioPage label,
+  #bioPage legend,
+  #bioPage li,
+  #bioPage mark,
+  #bioPage menu,
+  #bioPage nav,
+  #bioPage object,
+  #bioPage ol,
+  #bioPage output,
+  #bioPage p,
+  #bioPage pre,
+  #bioPage q,
+  #bioPage ruby,
+  #bioPage s,
+  #bioPage samp,
+  #bioPage section,
+  #bioPage small,
+  #bioPage span,
+  #bioPage strike,
+  #bioPage strong,
+  #bioPage sub,
+  #bioPage summary,
+  #bioPage sup,
+  #bioPage table,
+  #bioPage tbody,
+  #bioPage td,
+  #bioPage tfoot,
+  #bioPage th,
+  #bioPage thead,
+  #bioPage time,
+  #bioPage tr,
+  #bioPage tt,
+  #bioPage u,
+  #bioPage ul,
+  #bioPage var,
+  #bioPage video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  #bioPage article,
+  #bioPage aside,
+  #bioPage details,
+  #bioPage figcaption,
+  #bioPage figure,
+  #bioPage footer,
+  #bioPage header,
+  #bioPage hgroup,
+  #bioPage menu,
+  #bioPage nav,
+  #bioPage section {
+    display: block; }
+  #bioPage body {
+    line-height: 1; }
+  #bioPage ol,
+  #bioPage ul {
+    list-style: none; }
   #bioPage .container-fluid {
     height: auto; }
   #bioPage .back-arrow {
@@ -50,7 +154,7 @@
         font-size: 20px; }
       @media screen and (max-width: 500px) {
         #bioPage .scrolling-bio .container-fluid .sub-title {
-          font-size: 1.6rem;
+          font-size: 1.5rem !important;
           margin-bottom: 0.8rem; } }
       @media screen and (max-width: 500px) {
         #bioPage .scrolling-bio .container-fluid {
@@ -262,17 +366,17 @@
         #bioPage .scrolling-bio .container-fluid .passion__image {
           margin-bottom: 1.6rem; } }
       #bioPage .scrolling-bio .container-fluid .small-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #072142;
         letter-spacing: 0.2em;
         line-height: 1.2;
         font-family: 'Roboto', sans-serif; }
       @media screen and (max-width: 500px) {
         #bioPage .scrolling-bio .container-fluid .small-title {
-          font-size: 1.5rem; } }
+          font-size: 1.2rem; } }
       @media screen and (max-width: 500px) {
         #bioPage .scrolling-bio .container-fluid .small-title--skill {
-          font-size: 1.2rem; } }
+          font-size: 1rem; } }
       #bioPage .scrolling-bio .container-fluid .skill-set__flex {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -292,7 +396,8 @@
           -ms-flex-pack: start;
           justify-content: flex-start; } }
       #bioPage .scrolling-bio .container-fluid .skill-set__list {
-        width: 47%; }
+        width: 47%;
+        padding-left: 0px; }
       @media screen and (max-width: 800px) {
         #bioPage .scrolling-bio .container-fluid .skill-set__list {
           width: 100%; }
@@ -318,6 +423,11 @@
         width: 10.6382%;
         -ms-flex-item-align: center;
         align-self: center; }
+        #bioPage .scrolling-bio .container-fluid .skill-set__icon img {
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+          width: 100%; }
       #bioPage .scrolling-bio .container-fluid .skill-set__detail {
         width: 85.1063%; }
       #bioPage .scrolling-bio .container-fluid .skill-set__meta {
@@ -336,14 +446,14 @@
         -ms-flex-align: end;
         align-items: flex-end; }
       #bioPage .scrolling-bio .container-fluid .skill-set__year {
-        font-size: 1.4rem;
+        font-size: 1rem;
         line-height: 1.2;
         color: #c0c5ca;
         margin-left: 0.8rem;
         letter-spacing: 0.2em; }
       @media screen and (max-width: 500px) {
         #bioPage .scrolling-bio .container-fluid .skill-set__year {
-          font-size: 1rem; } }
+          font-size: 0.8rem; } }
       #bioPage .scrolling-bio .container-fluid .skill-set__ratio {
         font-size: 1.6rem;
         line-height: 1.2;
