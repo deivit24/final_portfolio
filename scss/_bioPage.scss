@@ -385,9 +385,477 @@
           margin-bottom: 1.6rem;
         }
       }
+
+      // skill stuff
+
+      .small-title {
+        font-size: 2rem;
+        color: #072142;
+        letter-spacing: 0.2em;
+        line-height: 1.2;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      @media screen and (max-width: 500px) {
+        .small-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .small-title--skill {
+          font-size: 1.2rem;
+        }
+      }
+
+      .skill-set__flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 800px) {
+        .skill-set__flex {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+        }
+      }
+
+      .skill-set__list {
+        width: 47%;
+      }
+
+      @media screen and (max-width: 800px) {
+        .skill-set__list {
+          width: 100%;
+          &:last-child {
+            margin-top: 7.2rem;
+          }
+        }
+      }
+
+      .skill-set__item {
+        margin-top: 6.4rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .skill-set__item {
+          margin-top: 3.2rem;
+        }
+      }
+
+      .skill-set__icon {
+        width: 10.6382%;
+        -ms-flex-item-align: center;
+        align-self: center;
+      }
+
+      .skill-set__detail {
+        width: 85.1063%;
+      }
+
+      .skill-set__meta {
+        margin-bottom: 0.8rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+
+      .skill-set__name {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+      }
+
+      .skill-set__year {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: #c0c5ca;
+        margin-left: 0.8rem;
+        letter-spacing: 0.2em;
+      }
+
+      @media screen and (max-width: 500px) {
+        .skill-set__year {
+          font-size: 1rem;
+        }
+      }
+
+      .skill-set__ratio {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        color: #072142;
+      }
+
+      @media screen and (max-width: 500px) {
+        .skill-set__ratio {
+          font-size: 1rem;
+        }
+      }
+
+      .skill-set__high {
+        color: #ff3300;
+      }
+      .js-scroll {
+        transition: 1s all ease-in-out;
+      }
+      .skill-set__bar {
+        width: 100%;
+        height: 1.4rem;
+        background: #fff;
+        position: relative;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
+        box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
+        transition: all 1s ease-in-out;
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          border-radius: 10px;
+          width: 10%;
+        }
+        &.p90 {
+          &:after {
+            background-image: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#2b3640),
+              color-stop(42%, #072142),
+              to(#ff3300)
+            );
+            background-image: -webkit-linear-gradient(
+              left,
+              #2b3640,
+              #072142 42%,
+              #ff3300
+            );
+            background-image: -o-linear-gradient(
+              left,
+              #2b3640,
+              #072142 42%,
+              #ff3300
+            );
+            background-image: linear-gradient(
+              to right,
+              #2b3640,
+              #072142 42%,
+              #ff3300
+            );
+          }
+          &.in:after {
+            -webkit-animation: ratio90 1.5s forwards;
+            animation: ratio90 1.5s forwards;
+          }
+        }
+        &.p80 {
+          &:after {
+            background-image: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#2b3640),
+              color-stop(50%, #072142),
+              to(#ff3300)
+            );
+            background-image: -webkit-linear-gradient(
+              left,
+              #2b3640,
+              #072142 50%,
+              #ff3300
+            );
+            background-image: -o-linear-gradient(
+              left,
+              #2b3640,
+              #072142 50%,
+              #ff3300
+            );
+            background-image: linear-gradient(
+              to right,
+              #2b3640,
+              #072142 50%,
+              #ff3300
+            );
+          }
+          &.in:after {
+            -webkit-animation: ratio80 1.5s forwards;
+            animation: ratio80 1.5s forwards;
+          }
+        }
+        &.p70 {
+          &:after {
+            background-image: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#2b3640),
+              color-stop(65%, #072142),
+              to(#ff3300)
+            );
+            background-image: -webkit-linear-gradient(
+              left,
+              #2b3640,
+              #072142 65%,
+              #ff3300
+            );
+            background-image: -o-linear-gradient(
+              left,
+              #2b3640,
+              #072142 65%,
+              #ff3300
+            );
+            background-image: linear-gradient(
+              to right,
+              #2b3640,
+              #072142 65%,
+              #ff3300
+            );
+          }
+          &.in:after {
+            -webkit-animation: ratio70 1.5s forwards;
+            animation: ratio70 1.5s forwards;
+          }
+        }
+        &.p60 {
+          &:after {
+            background-image: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#2b3640),
+              color-stop(75%, #072142),
+              to(#ff3300)
+            );
+            background-image: -webkit-linear-gradient(
+              left,
+              #2b3640,
+              #072142 75%,
+              #ff3300
+            );
+            background-image: -o-linear-gradient(
+              left,
+              #2b3640,
+              #072142 75%,
+              #ff3300
+            );
+            background-image: linear-gradient(
+              to right,
+              #2b3640,
+              #072142 75%,
+              #ff3300
+            );
+          }
+          &.in:after {
+            -webkit-animation: ratio60 1.5s forwards;
+            animation: ratio60 1.5s forwards;
+          }
+        }
+        &.p50 {
+          &:after {
+            background-image: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#2b3640),
+              color-stop(65%, #072142)
+            );
+            background-image: -webkit-linear-gradient(
+              left,
+              #2b3640,
+              #072142 65%
+            );
+            background-image: -o-linear-gradient(left, #2b3640, #072142 65%);
+            background-image: linear-gradient(to right, #2b3640, #072142 65%);
+          }
+          &.in:after {
+            -webkit-animation: ratio50 1.5s forwards;
+            animation: ratio50 1.5s forwards;
+          }
+        }
+        &.p40 {
+          &:after {
+            background-image: -webkit-gradient(
+              linear,
+              left top,
+              right top,
+              from(#072142),
+              color-stop(65%, #2b3640)
+            );
+            background-image: -webkit-linear-gradient(
+              left,
+              #072142,
+              #2b3640 65%
+            );
+            background-image: -o-linear-gradient(left, #072142, #2b3640 65%);
+            background-image: linear-gradient(to right, #072142, #2b3640 65%);
+          }
+          &.in:after {
+            -webkit-animation: ratio40 1.5s forwards;
+            animation: ratio40 1.5s forwards;
+          }
+        }
+
+        @-webkit-keyframes ratio90 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 90%;
+          }
+        }
+
+        @keyframes ratio90 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 90%;
+          }
+        }
+
+        @-webkit-keyframes ratio80 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 80%;
+          }
+        }
+
+        @keyframes ratio80 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 80%;
+          }
+        }
+
+        @-webkit-keyframes ratio70 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 70%;
+          }
+        }
+
+        @keyframes ratio70 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 70%;
+          }
+        }
+
+        @-webkit-keyframes ratio60 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 60%;
+          }
+        }
+
+        @keyframes ratio60 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 60%;
+          }
+        }
+
+        @-webkit-keyframes ratio50 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 50%;
+          }
+        }
+
+        @keyframes ratio50 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 50%;
+          }
+        }
+
+        @-webkit-keyframes ratio40 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 40%;
+          }
+        }
+
+        @keyframes ratio40 {
+          0% {
+            width: 10%;
+          }
+
+          to {
+            width: 40%;
+          }
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .skill-set__bar {
+          height: 0.7rem;
+        }
+      }
     }
   }
 }
+
 #name {
   color: white;
   padding: 0px;

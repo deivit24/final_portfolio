@@ -6,10 +6,11 @@ var items = new ScrollMagic.Controller();
 var img = new ScrollMagic.Controller();
 
 var sectionAppear = new ScrollMagic.Controller();
+var scroll = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({ triggerElement: '.img-bio' })
   .setClassToggle('.img-bio', 'img-bio-about') // add class toggle
-  .addIndicators() // add indicators (requires plugin)
+  // .addIndicators() // add indicators (requires plugin)
   .addTo(sectionAppear);
 
 $('.item-left').each(function() {
@@ -62,6 +63,18 @@ $('.img-cover').each(function() {
     .setClassToggle(this, 'img-appear')
     // .addIndicators()
     .addTo(img);
+});
+
+// Scroll rows
+
+$('.js-scroll').each(function() {
+  var scrollSlide = new ScrollMagic.Scene({
+    triggerElement: this,
+    triggerHook: 0.99
+  })
+    .setClassToggle(this, 'in')
+    .addIndicators()
+    .addTo(scroll);
 });
 
 $('#main').fullpage({
