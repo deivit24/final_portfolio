@@ -377,7 +377,12 @@
             margin-top: 0; } }
       @media screen and (max-width: 500px) {
         #bioPage .scrolling-bio .container-fluid .passion__item {
-          margin-top: 3.2rem; } }
+          margin-top: 3.2rem;
+          transition: all 1s ease-in-out; }
+          #bioPage .scrolling-bio .container-fluid .passion__item:first-child {
+            transition: all 1s ease-in-out; }
+          #bioPage .scrolling-bio .container-fluid .passion__item:last-child {
+            transition: all 1s ease-in-out; } }
       #bioPage .scrolling-bio .container-fluid .passion__image {
         width: 42.016%;
         margin: 0 auto 2.4rem; }
@@ -727,6 +732,9 @@ footer {
       footer h1 a:hover {
         color: white;
         opacity: 0.5; }
+  @media screen and (max-width: 500px) {
+    footer h1 a {
+      font-size: 1.2rem !important; } }
 
 body,
 html {

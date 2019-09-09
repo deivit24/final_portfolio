@@ -510,6 +510,13 @@
       @media screen and (max-width: 500px) {
         .passion__item {
           margin-top: 3.2rem;
+          transition: all 1s ease-in-out;
+          &:first-child {
+            transition: all 1s ease-in-out;
+          }
+          &:last-child {
+            transition: all 1s ease-in-out;
+          }
         }
       }
 
@@ -1139,6 +1146,11 @@ footer {
         color: white;
         opacity: 0.5;
       }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    h1 a {
+      font-size: 1.2rem !important;
     }
   }
 }
