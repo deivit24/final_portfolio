@@ -73,7 +73,7 @@ $('.js-scroll').each(function() {
     triggerHook: 0.99
   })
     .setClassToggle(this, 'in')
-    .addIndicators()
+
     .addTo(scroll);
 });
 
