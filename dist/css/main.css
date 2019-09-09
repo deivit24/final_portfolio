@@ -1,6 +1,8 @@
 #bioPage {
   background: linear-gradient(45deg, #000, #2b3640);
   transition: all 1s ease-in-out; }
+  #bioPage #main {
+    padding-bottom: 0px; }
   #bioPage a,
   #bioPage abbr,
   #bioPage acronym,
@@ -117,13 +119,13 @@
     -o-transition: 0.5s;
     transition: 0.5s;
     overflow: hidden;
-    color: #fff;
+    color: white;
+    max-width: 50px;
     z-index: 300;
     transition: all 0.5s ease-in-out; }
     #bioPage .back-arrow:hover {
       transform: translateX(-10px); }
   #bioPage .scrolling-bio {
-    margin-bottom: 20rem;
     position: relative;
     z-index: 200;
     background: white; }
@@ -152,6 +154,23 @@
         word-wrap: break-word;
         white-space: normal;
         font-size: 20px; }
+      #bioPage .scrolling-bio .container-fluid .item-left {
+        opacity: 0;
+        transform: translateX(-500px); }
+      #bioPage .scrolling-bio .container-fluid .item-down {
+        letter-spacing: 2em; }
+      #bioPage .scrolling-bio .container-fluid .item-up {
+        opacity: 0;
+        transform: translateY(-100px); }
+      #bioPage .scrolling-bio .container-fluid .item-right {
+        opacity: 0;
+        transform: translateX(500px); }
+      #bioPage .scrolling-bio .container-fluid .scroll-appear {
+        letter-spacing: 0em !important; }
+      #bioPage .scrolling-bio .container-fluid .items-appear {
+        opacity: 1;
+        transform: translateX(0px);
+        transform: translateY(0px); }
       @media screen and (max-width: 500px) {
         #bioPage .scrolling-bio .container-fluid .sub-title {
           font-size: 1.5rem !important;
@@ -344,7 +363,12 @@
           justify-content: flex-start; } }
       #bioPage .scrolling-bio .container-fluid .passion__item {
         width: 29.75%;
-        list-style: none; }
+        list-style: none;
+        transition: all 2s ease-in-out; }
+        #bioPage .scrolling-bio .container-fluid .passion__item:first-child {
+          transition: all 1s ease-in-out; }
+        #bioPage .scrolling-bio .container-fluid .passion__item:last-child {
+          transition: all 3s ease-in-out; }
       @media screen and (max-width: 800px) {
         #bioPage .scrolling-bio .container-fluid .passion__item {
           width: 100%;
@@ -385,7 +409,8 @@
         flex-wrap: wrap;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+        padding-bottom: 200px; }
       @media screen and (max-width: 800px) {
         #bioPage .scrolling-bio .container-fluid .skill-set__flex {
           -webkit-box-orient: vertical;
@@ -394,7 +419,8 @@
           flex-direction: column;
           -webkit-box-pack: start;
           -ms-flex-pack: start;
-          justify-content: flex-start; } }
+          justify-content: flex-start;
+          padding-bottom: 100px; } }
       #bioPage .scrolling-bio .container-fluid .skill-set__list {
         width: 47%;
         padding-left: 0px; }
@@ -675,7 +701,32 @@
           left: 10% !important; }
       #bioPage #bio .container-fluid .scrolling-bio {
         position: relative;
-        margin-top: 12rem; } }
+        margin-top: 12rem;
+        padding-bottom: 50px; } }
+
+footer {
+  background: -webkit-gradient(linear, left top, right top, from(#2b3640), color-stop(42%, #072142), to(#ff3300));
+  background: -webkit-linear-gradient(left, #2b3640, #072142 42%, #ff3300);
+  background: -o-linear-gradient(left, #2b3640, #072142 42%, #ff3300);
+  background: linear-gradient(to right, #2b3640, #072142 42%, #ff3300);
+  height: 300px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important; }
+  footer h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem !important; }
+    footer h1 a {
+      text-decoration: none !important;
+      color: white;
+      text-transform: lowercase; }
+      footer h1 a:hover {
+        color: white;
+        opacity: 0.5; }
 
 body,
 html {
