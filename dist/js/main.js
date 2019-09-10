@@ -29,7 +29,7 @@ $(function() {
   })
     .setPin('#scrolling-work')
     .setTween(wipeAnimation)
-    .addIndicators() // add indicators (requires plugin)
+    // add indicators (requires plugin)
     .addTo(wipeani);
 });
 
