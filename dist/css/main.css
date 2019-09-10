@@ -785,6 +785,272 @@ footer {
     footer h1 a {
       font-size: 1.2rem !important; } }
 
+#workPage {
+  background: linear-gradient(45deg, #000, #2b3640);
+  transition: all 1s ease-in-out; }
+  #workPage #main {
+    padding-bottom: 0px; }
+  #workPage a,
+  #workPage abbr,
+  #workPage acronym,
+  #workPage address,
+  #workPage applet,
+  #workPage article,
+  #workPage aside,
+  #workPage audio,
+  #workPage b,
+  #workPage big,
+  #workPage blockquote,
+  #workPage body,
+  #workPage canvas,
+  #workPage caption,
+  #workPage center,
+  #workPage cite,
+  #workPage code,
+  #workPage dd,
+  #workPage del,
+  #workPage details,
+  #workPage dfn,
+  #workPage div,
+  #workPage dl,
+  #workPage dt,
+  #workPage em,
+  #workPage embed,
+  #workPage fieldset,
+  #workPage figcaption,
+  #workPage figure,
+  #workPage footer,
+  #workPage form,
+  #workPage h1,
+  #workPage h2,
+  #workPage h3,
+  #workPage h4,
+  #workPage h5,
+  #workPage h6,
+  #workPage header,
+  #workPage hgroup,
+  #workPage html,
+  #workPage i,
+  #workPage iframe,
+  #workPage img,
+  #workPage ins,
+  #workPage kbd,
+  #workPage label,
+  #workPage legend,
+  #workPage li,
+  #workPage mark,
+  #workPage menu,
+  #workPage nav,
+  #workPage object,
+  #workPage ol,
+  #workPage output,
+  #workPage p,
+  #workPage pre,
+  #workPage q,
+  #workPage ruby,
+  #workPage s,
+  #workPage samp,
+  #workPage section,
+  #workPage small,
+  #workPage span,
+  #workPage strike,
+  #workPage strong,
+  #workPage sub,
+  #workPage summary,
+  #workPage sup,
+  #workPage table,
+  #workPage tbody,
+  #workPage td,
+  #workPage tfoot,
+  #workPage th,
+  #workPage thead,
+  #workPage time,
+  #workPage tr,
+  #workPage tt,
+  #workPage u,
+  #workPage ul,
+  #workPage var,
+  #workPage video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  #workPage article,
+  #workPage aside,
+  #workPage details,
+  #workPage figcaption,
+  #workPage figure,
+  #workPage footer,
+  #workPage header,
+  #workPage hgroup,
+  #workPage menu,
+  #workPage nav,
+  #workPage section {
+    display: block; }
+  #workPage body {
+    line-height: 1; }
+  #workPage ol,
+  #workPage ul {
+    list-style: none; }
+  #workPage .container-fluid {
+    height: auto; }
+  #workPage .back-arrow {
+    position: fixed;
+    top: 80px;
+    left: 40px;
+    display: block;
+    font-size: 5rem;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+    color: white;
+    max-width: 50px;
+    z-index: 300;
+    transition: all 0.5s ease-in-out; }
+    #workPage .back-arrow:hover {
+      transform: translateX(-10px); }
+  #workPage #scroll span {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box; }
+    #workPage #scroll span:nth-of-type(1) {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s; }
+    #workPage #scroll span:nth-of-type(2) {
+      top: 86%;
+      -webkit-animation-delay: 0.15s;
+      animation-delay: 0.15s; }
+    #workPage #scroll span:nth-of-type(3) {
+      top: 87%;
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+  #workPage #scrolling-work {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000 !important; }
+    #workPage #scrolling-work #slideContainer {
+      width: 400%;
+      /* to contain 4 panels, each with 100% of window width */
+      height: 100%; }
+      #workPage #scrolling-work #slideContainer .panel {
+        height: 100%;
+        width: 25%;
+        /* relative to parent -> 25% of 400% = 100% of window width */
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      #workPage #scrolling-work #slideContainer .blue {
+        background: blue; }
+      #workPage #scrolling-work #slideContainer .turqoise {
+        background: turquoise; }
+      #workPage #scrolling-work #slideContainer .green {
+        background: green; }
+      #workPage #scrolling-work #slideContainer .bordeaux {
+        background: burlywood; }
+
+#name {
+  color: white;
+  padding: 0px;
+  position: fixed;
+  text-decoration: none;
+  top: 10px;
+  left: 10px; }
+  #name:hover {
+    opacity: 0.75; }
+  #name h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem; }
+
+@media screen and (max-width: 768px) {
+  #workPage .image-bio {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media screen and (max-width: 500px) {
+  #workPage .back-arrow {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    display: block;
+    font-size: 3rem;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #fff;
+    opacity: 0.6;
+    z-index: 300;
+    transition: all 0.5s ease-in-out; }
+    #workPage .back-arrow:hover {
+      transform: translateX(-10px); }
+  #workPage #scroll {
+    left: 80%; }
+  #workPage #work {
+    height: 100vh !important; }
+    #workPage #work .container-fluid {
+      padding: 1px; }
+      #workPage #work .container-fluid .title {
+        width: 87.5%;
+        margin: 0 6.25%;
+        top: auto;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        bottom: 5rem; }
+        #workPage #work .container-fluid .title h1 {
+          font-size: 3rem !important; }
+      #workPage #work .container-fluid p {
+        font-size: 1.5rem !important; }
+      #workPage #work .container-fluid .img-work-about {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        height: 60% !important;
+        margin: 0 !important;
+        top: 0% !important;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+        #workPage #work .container-fluid .img-work-about .image-over h1 {
+          left: 10% !important; } }
+
 body,
 html {
   height: 100%;
@@ -1143,9 +1409,13 @@ h1 {
   transform: translateY(0px); }
 
 #home .img-bio-about,
+#home .img-work-about,
 #work .img-bio-about,
+#work .img-work-about,
 #bio .img-bio-about,
-#contact .img-bio-about {
+#bio .img-work-about,
+#contact .img-bio-about,
+#contact .img-work-about {
   display: flex !important;
   position: relative !important;
   width: 60.677% !important;
@@ -1340,7 +1610,7 @@ h1 {
       #work .container-fluid .title h1,
       #bio .container-fluid .title h1,
       #contact .container-fluid .title h1 {
-        font-size: 7rem;
+        font-size: 5rem;
         text-align: left;
         letter-spacing: 0.1em;
         margin-bottom: 40px;
@@ -1375,15 +1645,11 @@ h1 {
         background: #fff;
         margin-bottom: 15px;
         transition: all 1s ease-in-out; }
-      #home .container-fluid .title p,
-      #work .container-fluid .title p,
-      #bio .container-fluid .title p,
-      #contact .container-fluid .title p {
-        color: white;
-        font-size: 2rem;
-        font-family: 'Roboto', sans-serif;
-        transition: all 0.5s ease-in-out;
-        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+      #home .container-fluid .title .about-p,
+      #work .container-fluid .title .about-p,
+      #bio .container-fluid .title .about-p,
+      #contact .container-fluid .title .about-p {
+        display: none; }
       #home .container-fluid .title .home-p,
       #work .container-fluid .title .home-p,
       #bio .container-fluid .title .home-p,
