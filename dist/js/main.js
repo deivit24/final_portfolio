@@ -31,7 +31,7 @@ $('.item-right').each(function() {
     duration: '99%'
   })
     .setClassToggle(this, 'items-appear')
-    .addIndicators()
+    // .addIndicators()
     .addTo(items);
 });
 $('.item-up').each(function() {
