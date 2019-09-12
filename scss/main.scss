@@ -308,7 +308,15 @@ h1 {
     transform: translateX(0px);
     transform: translateY(0px);
   }
-  .img-bio-about,
+  .img-bio-about {
+    display: flex !important;
+    position: relative !important;
+    width: 60.677% !important;
+    height: 100vh !important;
+    margin: 0 0 0 auto !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
   .img-work-about {
     display: flex !important;
     position: relative !important;
@@ -532,7 +540,7 @@ h1 {
         }
       }
       .image-works {
-        background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)),
+        background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)),
           url('../img/homeimg.jpg') no-repeat center;
         background-size: cover;
       }
@@ -719,7 +727,7 @@ h1 {
         }
       }
       .image-works {
-        background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)),
+        background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)),
           url('../img/homeimg.jpg') no-repeat center;
         background-size: cover;
       }
@@ -906,7 +914,7 @@ h1 {
         }
       }
       .image-works {
-        background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)),
+        background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)),
           url('../img/homeimg.jpg') no-repeat center;
         background-size: cover;
       }

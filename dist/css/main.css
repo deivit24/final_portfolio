@@ -973,7 +973,58 @@ footer {
         flex-direction: column;
         justify-content: center; }
       #workPage #scrolling-work #slideContainer .blue {
-        background: blue; }
+        background: #f4f4f4;
+        text-align: center; }
+        #workPage #scrolling-work #slideContainer .blue .col-sm-4 {
+          padding: 20px; }
+          #workPage #scrolling-work #slideContainer .blue .col-sm-4 h1 {
+            font-size: 1.8rem;
+            letter-spacing: 0.2em;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.3; }
+          #workPage #scrolling-work #slideContainer .blue .col-sm-4 p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem; }
+        #workPage #scrolling-work #slideContainer .blue .col-6 {
+          text-align: right; }
+          #workPage #scrolling-work #slideContainer .blue .col-6 .btn-primary {
+            margin: 10px;
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #ff3300;
+            line-height: 1;
+            font-weight: bold;
+            padding: 18px 32px;
+            border-radius: 50px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            letter-spacing: 0.1em; }
+          #workPage #scrolling-work #slideContainer .blue .col-6 .btn-secondary {
+            margin: 10px;
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #2b3640;
+            line-height: 1;
+            font-weight: bold;
+            padding: 18px 32px;
+            border-radius: 50px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            letter-spacing: 0.1em; }
+          #workPage #scrolling-work #slideContainer .blue .col-6:last-child {
+            text-align: left; }
+        #workPage #scrolling-work #slideContainer .blue .row {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
       #workPage #scrolling-work #slideContainer .turqoise {
         background: turquoise; }
       #workPage #scrolling-work #slideContainer .green {
@@ -995,7 +1046,7 @@ footer {
     font-size: 2rem; }
 
 @media screen and (max-width: 768px) {
-  #workPage .image-bio {
+  #workPage .image-works {
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -1049,7 +1100,21 @@ footer {
         -webkit-box-shadow: none;
         box-shadow: none; }
         #workPage #work .container-fluid .img-work-about .image-over h1 {
-          left: 10% !important; } }
+          left: 10% !important; }
+  .blue {
+    background: #f4f4f4;
+    text-align: center; }
+    .blue .col-sm-4 {
+      padding: 20px; }
+      .blue .col-sm-4 h1 {
+        font-size: 1.5rem !important; }
+      .blue .col-sm-4 p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem !important; }
+    .blue .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
 
 body,
 html {
@@ -1409,12 +1474,20 @@ h1 {
   transform: translateY(0px); }
 
 #home .img-bio-about,
-#home .img-work-about,
 #work .img-bio-about,
-#work .img-work-about,
 #bio .img-bio-about,
+#contact .img-bio-about {
+  display: flex !important;
+  position: relative !important;
+  width: 60.677% !important;
+  height: 100vh !important;
+  margin: 0 0 0 auto !important;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#home .img-work-about,
+#work .img-work-about,
 #bio .img-work-about,
-#contact .img-bio-about,
 #contact .img-work-about {
   display: flex !important;
   position: relative !important;
@@ -1679,7 +1752,7 @@ h1 {
     #work .container-fluid .image-works,
     #bio .container-fluid .image-works,
     #contact .container-fluid .image-works {
-      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)), url("../img/homeimg.jpg") no-repeat center;
+      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)), url("../img/homeimg.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image-home .img-over h1,
     #work .container-fluid .image-home .img-over h1,
@@ -1891,7 +1964,7 @@ h1 {
     #work .container-fluid .image-works,
     #bio .container-fluid .image-works,
     #contact .container-fluid .image-works {
-      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)), url("../img/homeimg.jpg") no-repeat center;
+      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)), url("../img/homeimg.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image-bio,
     #work .container-fluid .image-bio,
@@ -2103,7 +2176,7 @@ h1 {
     #work .container-fluid .image-works,
     #bio .container-fluid .image-works,
     #contact .container-fluid .image-works {
-      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(43, 54, 64, 0.26)), url("../img/homeimg.jpg") no-repeat center;
+      background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(255, 51, 0, 0.26)), url("../img/homeimg.jpg") no-repeat center;
       background-size: cover; }
     #home .container-fluid .image-bio,
     #work .container-fluid .image-bio,

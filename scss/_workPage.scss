@@ -221,7 +221,68 @@
         justify-content: center;
       }
       .blue {
-        background: blue;
+        background: #f4f4f4;
+        text-align: center;
+
+        .col-sm-4 {
+          padding: 20px;
+          h1 {
+            font-size: 1.8rem;
+            letter-spacing: 0.2em;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.3;
+          }
+          p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem;
+          }
+        }
+        .col-6 {
+          text-align: right;
+          .btn-primary {
+            margin: 10px;
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #ff3300;
+            line-height: 1;
+            font-weight: bold;
+            padding: 18px 32px;
+            border-radius: 50px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            letter-spacing: 0.1em;
+          }
+          .btn-secondary {
+            margin: 10px;
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #2b3640;
+            line-height: 1;
+            font-weight: bold;
+            padding: 18px 32px;
+            border-radius: 50px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            letter-spacing: 0.1em;
+          }
+          &:last-child {
+            text-align: left;
+          }
+        }
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
       }
       .turqoise {
         background: turquoise;
@@ -254,7 +315,7 @@
 
 @include mediaMd {
   #workPage {
-    .image-bio {
+    .image-works {
       width: 100%;
       height: 100%;
       display: -webkit-box;
@@ -326,6 +387,27 @@
           }
         }
       }
+    }
+  }
+  .blue {
+    background: #f4f4f4;
+    text-align: center;
+
+    .col-sm-4 {
+      padding: 20px;
+      h1 {
+        font-size: 1.5rem !important;
+      }
+      p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem !important;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 }
