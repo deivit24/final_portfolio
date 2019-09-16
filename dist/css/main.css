@@ -1009,6 +1009,11 @@ footer {
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em; }
+            #workPage #scrolling-work #slideContainer .blue .col-6 .btn-primary:hover,
+            #workPage #scrolling-work #slideContainer .green .col-6 .btn-primary:hover {
+              background: white;
+              color: #ff3300;
+              border: 2px solid #ff3300; }
           #workPage #scrolling-work #slideContainer .blue .col-6 .btn-secondary,
           #workPage #scrolling-work #slideContainer .green .col-6 .btn-secondary {
             margin: 10px;
@@ -1026,6 +1031,11 @@ footer {
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em; }
+            #workPage #scrolling-work #slideContainer .blue .col-6 .btn-secondary:hover,
+            #workPage #scrolling-work #slideContainer .green .col-6 .btn-secondary:hover {
+              background: white;
+              color: #2b3640;
+              border: 2px solid #2b3640; }
           #workPage #scrolling-work #slideContainer .blue .col-6:last-child,
           #workPage #scrolling-work #slideContainer .green .col-6:last-child {
             text-align: left; }
@@ -1034,22 +1044,28 @@ footer {
           display: flex;
           flex-direction: row;
           justify-content: center; }
-      #workPage #scrolling-work #slideContainer .turqoise {
+      #workPage #scrolling-work #slideContainer .turqoise,
+      #workPage #scrolling-work #slideContainer .bordeaux {
         background: #fff;
         text-align: center; }
-        #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 {
+        #workPage #scrolling-work #slideContainer .turqoise .col-sm-4,
+        #workPage #scrolling-work #slideContainer .bordeaux .col-sm-4 {
           padding: 20px; }
-          #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 h1 {
+          #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 h1,
+          #workPage #scrolling-work #slideContainer .bordeaux .col-sm-4 h1 {
             font-size: 1.8rem;
             letter-spacing: 0.2em;
             font-family: 'Roboto', sans-serif;
             line-height: 1.3; }
-          #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 p {
+          #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 p,
+          #workPage #scrolling-work #slideContainer .bordeaux .col-sm-4 p {
             font-family: 'Raleway', sans-serif;
             font-size: 1.2rem; }
-        #workPage #scrolling-work #slideContainer .turqoise .col-6 {
+        #workPage #scrolling-work #slideContainer .turqoise .col-6,
+        #workPage #scrolling-work #slideContainer .bordeaux .col-6 {
           text-align: right; }
-          #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-primary {
+          #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-primary,
+          #workPage #scrolling-work #slideContainer .bordeaux .col-6 .btn-primary {
             margin: 10px;
             font-family: 'Roboto', sans-serif;
             display: inline-block;
@@ -1065,7 +1081,13 @@ footer {
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em; }
-          #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-secondary {
+            #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-primary:hover,
+            #workPage #scrolling-work #slideContainer .bordeaux .col-6 .btn-primary:hover {
+              background: white;
+              color: #ff3300;
+              border: 2px solid #ff3300; }
+          #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-secondary,
+          #workPage #scrolling-work #slideContainer .bordeaux .col-6 .btn-secondary {
             margin: 10px;
             font-family: 'Roboto', sans-serif;
             display: inline-block;
@@ -1081,9 +1103,16 @@ footer {
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em; }
-          #workPage #scrolling-work #slideContainer .turqoise .col-6:last-child {
+            #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-secondary:hover,
+            #workPage #scrolling-work #slideContainer .bordeaux .col-6 .btn-secondary:hover {
+              background: white;
+              color: #2b3640;
+              border: 2px solid #2b3640; }
+          #workPage #scrolling-work #slideContainer .turqoise .col-6:last-child,
+          #workPage #scrolling-work #slideContainer .bordeaux .col-6:last-child {
             text-align: left; }
-        #workPage #scrolling-work #slideContainer .turqoise .row {
+        #workPage #scrolling-work #slideContainer .turqoise .row,
+        #workPage #scrolling-work #slideContainer .bordeaux .row {
           display: flex;
           flex-direction: row;
           justify-content: center; }
@@ -1159,24 +1188,29 @@ footer {
           left: 10% !important; }
   .blue,
   .turqoise,
-  .green {
+  .green,
+  .bordeaux {
     text-align: center; }
     .blue .col-sm-4,
     .turqoise .col-sm-4,
-    .green .col-sm-4 {
+    .green .col-sm-4,
+    .bordeaux .col-sm-4 {
       padding: 20px; }
       .blue .col-sm-4 h1,
       .turqoise .col-sm-4 h1,
-      .green .col-sm-4 h1 {
+      .green .col-sm-4 h1,
+      .bordeaux .col-sm-4 h1 {
         font-size: 1.5rem !important; }
       .blue .col-sm-4 p,
       .turqoise .col-sm-4 p,
-      .green .col-sm-4 p {
+      .green .col-sm-4 p,
+      .bordeaux .col-sm-4 p {
         font-family: 'Raleway', sans-serif;
         font-size: 1rem !important; }
     .blue .row,
     .turqoise .row,
-    .green .row {
+    .green .row,
+    .bordeaux .row {
       display: flex;
       flex-direction: row;
       justify-content: center; } }

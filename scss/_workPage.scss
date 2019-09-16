@@ -256,6 +256,11 @@
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em;
+            &:hover {
+              background: white;
+              color: #ff3300;
+              border: 2px solid #ff3300;
+            }
           }
           .btn-secondary {
             margin: 10px;
@@ -273,6 +278,11 @@
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em;
+            &:hover {
+              background: white;
+              color: #2b3640;
+              border: 2px solid #2b3640;
+            }
           }
           &:last-child {
             text-align: left;
@@ -285,7 +295,8 @@
           justify-content: center;
         }
       }
-      .turqoise {
+      .turqoise,
+      .bordeaux {
         background: #fff;
         text-align: center;
 
@@ -320,6 +331,11 @@
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em;
+            &:hover {
+              background: white;
+              color: #ff3300;
+              border: 2px solid #ff3300;
+            }
           }
           .btn-secondary {
             margin: 10px;
@@ -337,6 +353,11 @@
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em;
+            &:hover {
+              background: white;
+              color: #2b3640;
+              border: 2px solid #2b3640;
+            }
           }
           &:last-child {
             text-align: left;
@@ -447,7 +468,8 @@
   }
   .blue,
   .turqoise,
-  .green {
+  .green,
+  .bordeaux {
     text-align: center;
 
     .col-sm-4 {
