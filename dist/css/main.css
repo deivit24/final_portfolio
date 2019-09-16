@@ -972,22 +972,28 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center; }
-      #workPage #scrolling-work #slideContainer .blue {
+      #workPage #scrolling-work #slideContainer .blue,
+      #workPage #scrolling-work #slideContainer .green {
         background: #f4f4f4;
         text-align: center; }
-        #workPage #scrolling-work #slideContainer .blue .col-sm-4 {
+        #workPage #scrolling-work #slideContainer .blue .col-sm-4,
+        #workPage #scrolling-work #slideContainer .green .col-sm-4 {
           padding: 20px; }
-          #workPage #scrolling-work #slideContainer .blue .col-sm-4 h1 {
+          #workPage #scrolling-work #slideContainer .blue .col-sm-4 h1,
+          #workPage #scrolling-work #slideContainer .green .col-sm-4 h1 {
             font-size: 1.8rem;
             letter-spacing: 0.2em;
             font-family: 'Roboto', sans-serif;
             line-height: 1.3; }
-          #workPage #scrolling-work #slideContainer .blue .col-sm-4 p {
+          #workPage #scrolling-work #slideContainer .blue .col-sm-4 p,
+          #workPage #scrolling-work #slideContainer .green .col-sm-4 p {
             font-family: 'Raleway', sans-serif;
             font-size: 1.2rem; }
-        #workPage #scrolling-work #slideContainer .blue .col-6 {
+        #workPage #scrolling-work #slideContainer .blue .col-6,
+        #workPage #scrolling-work #slideContainer .green .col-6 {
           text-align: right; }
-          #workPage #scrolling-work #slideContainer .blue .col-6 .btn-primary {
+          #workPage #scrolling-work #slideContainer .blue .col-6 .btn-primary,
+          #workPage #scrolling-work #slideContainer .green .col-6 .btn-primary {
             margin: 10px;
             font-family: 'Roboto', sans-serif;
             display: inline-block;
@@ -1003,7 +1009,8 @@ footer {
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em; }
-          #workPage #scrolling-work #slideContainer .blue .col-6 .btn-secondary {
+          #workPage #scrolling-work #slideContainer .blue .col-6 .btn-secondary,
+          #workPage #scrolling-work #slideContainer .green .col-6 .btn-secondary {
             margin: 10px;
             font-family: 'Roboto', sans-serif;
             display: inline-block;
@@ -1019,18 +1026,67 @@ footer {
             -o-transition: 0.3s;
             transition: 0.3s;
             letter-spacing: 0.1em; }
-          #workPage #scrolling-work #slideContainer .blue .col-6:last-child {
+          #workPage #scrolling-work #slideContainer .blue .col-6:last-child,
+          #workPage #scrolling-work #slideContainer .green .col-6:last-child {
             text-align: left; }
-        #workPage #scrolling-work #slideContainer .blue .row {
+        #workPage #scrolling-work #slideContainer .blue .row,
+        #workPage #scrolling-work #slideContainer .green .row {
           display: flex;
           flex-direction: row;
           justify-content: center; }
       #workPage #scrolling-work #slideContainer .turqoise {
-        background: turquoise; }
-      #workPage #scrolling-work #slideContainer .green {
-        background: green; }
-      #workPage #scrolling-work #slideContainer .bordeaux {
-        background: burlywood; }
+        background: #fff;
+        text-align: center; }
+        #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 {
+          padding: 20px; }
+          #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 h1 {
+            font-size: 1.8rem;
+            letter-spacing: 0.2em;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.3; }
+          #workPage #scrolling-work #slideContainer .turqoise .col-sm-4 p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem; }
+        #workPage #scrolling-work #slideContainer .turqoise .col-6 {
+          text-align: right; }
+          #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-primary {
+            margin: 10px;
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #ff3300;
+            line-height: 1;
+            font-weight: bold;
+            padding: 18px 32px;
+            border-radius: 50px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            letter-spacing: 0.1em; }
+          #workPage #scrolling-work #slideContainer .turqoise .col-6 .btn-secondary {
+            margin: 10px;
+            font-family: 'Roboto', sans-serif;
+            display: inline-block;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #2b3640;
+            line-height: 1;
+            font-weight: bold;
+            padding: 18px 32px;
+            border-radius: 50px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            letter-spacing: 0.1em; }
+          #workPage #scrolling-work #slideContainer .turqoise .col-6:last-child {
+            text-align: left; }
+        #workPage #scrolling-work #slideContainer .turqoise .row {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
 
 #name {
   color: white;
@@ -1101,17 +1157,26 @@ footer {
         box-shadow: none; }
         #workPage #work .container-fluid .img-work-about .image-over h1 {
           left: 10% !important; }
-  .blue {
-    background: #f4f4f4;
+  .blue,
+  .turqoise,
+  .green {
     text-align: center; }
-    .blue .col-sm-4 {
+    .blue .col-sm-4,
+    .turqoise .col-sm-4,
+    .green .col-sm-4 {
       padding: 20px; }
-      .blue .col-sm-4 h1 {
+      .blue .col-sm-4 h1,
+      .turqoise .col-sm-4 h1,
+      .green .col-sm-4 h1 {
         font-size: 1.5rem !important; }
-      .blue .col-sm-4 p {
+      .blue .col-sm-4 p,
+      .turqoise .col-sm-4 p,
+      .green .col-sm-4 p {
         font-family: 'Raleway', sans-serif;
         font-size: 1rem !important; }
-    .blue .row {
+    .blue .row,
+    .turqoise .row,
+    .green .row {
       display: flex;
       flex-direction: row;
       justify-content: center; } }
