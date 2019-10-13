@@ -372,6 +372,56 @@
       }
     }
   }
+  #sideWork {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+      h1 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.5em;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+      hr {
+        color: white;
+        background: white;
+        margin-bottom: 1em;
+      }
+      ul {
+        li {
+          margin-bottom: 30px;
+          a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 1.5em;
+            &:hover {
+              color: #ff3300;
+            }
+          }
+        }
+      }
+      @include mediaMd {
+        h1 {
+          font-size: 1.5em;
+        }
+        ul {
+          li {
+            margin-bottom: 30px;
+            a {
+              text-decoration: none;
+              color: whitesmoke;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #name {

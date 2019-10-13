@@ -1116,6 +1116,40 @@ footer {
           display: flex;
           flex-direction: row;
           justify-content: center; }
+  #workPage #sideWork {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #workPage #sideWork .wrapper h1 {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      letter-spacing: 0.5em;
+      font-size: 2em;
+      margin-bottom: 1em; }
+    #workPage #sideWork .wrapper hr {
+      color: white;
+      background: white;
+      margin-bottom: 1em; }
+    #workPage #sideWork .wrapper ul li {
+      margin-bottom: 30px; }
+      #workPage #sideWork .wrapper ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 1.5em; }
+        #workPage #sideWork .wrapper ul li a:hover {
+          color: #ff3300; }
+    @media screen and (max-width: 768px) {
+      #workPage #sideWork .wrapper h1 {
+        font-size: 1.5em; }
+      #workPage #sideWork .wrapper ul li {
+        margin-bottom: 30px; }
+        #workPage #sideWork .wrapper ul li a {
+          text-decoration: none;
+          color: whitesmoke;
+          font-size: 1.2em; } }
 
 #name {
   color: white;
@@ -1417,7 +1451,8 @@ h1 {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      z-index: 0; }
       #home .container-fluid .image-home .img-over h1,
       #work .container-fluid .image-home .img-over h1,
       #bio .container-fluid .image-home .img-over h1,
